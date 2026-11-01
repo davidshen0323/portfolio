@@ -9,7 +9,7 @@ import { states } from './domain/contest';
 import ContestCard from './components/ContestCard';
 import ContestForm from './components/ContestForm';
 import ContestDetail from './components/ContestDetail';
-import '../../shared/styles/freebet.css';
+import '../../shared/styles/contests.css';
 
 export default function ContestsPage() {
   const { t, locale } = useI18n();
@@ -44,15 +44,15 @@ export default function ContestsPage() {
     mine === 'created' ? c.owner === 'visitor' : c.votes.some((v) => v.user === 'visitor'),
   );
   return (
-    <Page theme="contests" title="Freebet｜競賽預測與狀態流程">
+    <Page theme="contests" title="競賽預測與狀態流程">
       <div className="project-strip">
         <AppLink href="index.html">← DAVID SHEN / WORK 08</AppLink>
-        <AppLink href="case-freebet.html">{t('閱讀作品解析 ↗')}</AppLink>
+        <AppLink href="case-contests.html">{t('閱讀作品解析 ↗')}</AppLink>
       </div>
       <div className="app-shell">
         <aside className="app-side">
-          <AppLink href="freebet.html" className="brand">
-            freebet<span>MAKE YOUR CALL.</span>
+          <AppLink href="contests.html" className="brand">
+            contests<span>MAKE YOUR CALL.</span>
           </AppLink>
           <nav>
             {[
@@ -72,7 +72,7 @@ export default function ContestsPage() {
               <br />
               {t('每一個狀態都清楚。')}
             </p>
-            <AppLink href="case-freebet.html">{t('Flutter 經驗與本作範圍 ↗')}</AppLink>
+            <AppLink href="case-contests.html">{t('Flutter 經驗與本作範圍 ↗')}</AppLink>
           </div>
         </aside>
         <main>
@@ -220,7 +220,7 @@ export default function ContestsPage() {
           <footer className="app-footer">
             <p>
               {t(
-                '以 Freebet 開發經驗延伸的網頁互動作品。沒有真實下注、金流、登入或伺服器同步；點數不會依結果派發。',
+                '以跨平台競賽產品開發經驗延伸的網頁互動作品。沒有真實下注、金流、登入或伺服器同步；點數不會依結果派發。',
               )}
             </p>
             <button

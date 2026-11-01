@@ -25,14 +25,14 @@ const routes = {
   dealer: Dealer,
   api: Earthquakes,
   fix: Responsive,
-  freebet: Contests,
+  contests: Contests,
   gameflow: Gameflow,
 };
 
 function ScrollRestoration() {
   const { pathname, hash } = useLocation();
   useEffect(() => {
-    if (['/dashboard.html', '/freebet.html'].includes(pathname)) return;
+    if (['/dashboard.html', '/contests.html'].includes(pathname)) return;
     if (!hash) {
       window.scrollTo(0, 0);
       return;

@@ -57,6 +57,6 @@ Features use `components`, `hooks`, `domain`, `services` and `data` where needed
 
 This is a frontend portfolio with browser-local interactions. It has no production authentication, payments, messaging server, immutable audit trail or multi-user transaction lock. Order status changes do not issue refunds, send notifications or restore stock. Storage write failures attempt to restore previous values; this is not a database transaction.
 
-Freebet is a browser recreation of interaction and state flows informed by Flutter experience; the repository is not a Flutter application. Game outcomes and points are local examples. External fonts and USGS data require network access.
+The contest prediction demo is a browser recreation of interaction and state flows informed by Flutter experience; the repository is not a Flutter application. Game outcomes and points are local examples. External fonts and USGS data require network access.
 
 For a production service, replace repository and event-source boundaries with authorized backend APIs, enforce inventory and financial rules server-side, and implement delivery, refund and notification workflows.

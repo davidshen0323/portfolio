@@ -8,7 +8,7 @@ const themes = {
   dealer: 'dealer',
   api: 'earthquakes',
   fix: 'responsive',
-  freebet: 'contests',
+  contests: 'contests',
   gameflow: 'gameflow',
 };
 

@@ -4,7 +4,7 @@ import { seedContests, createContest } from '../domain/contest';
 import { applyContestAction } from '../domain/contestStore';
 const initial = () => ({ contests: seedContests(), points: 1000 });
 export function useContests() {
-  const [data, save, storageError] = useStoredState('david-freebet-v1', initial());
+  const [data, save, storageError] = useStoredState('david-contests-v1', initial());
   const [message, setMessage] = useState('');
   const act = (id, action, options = {}) => {
     try {

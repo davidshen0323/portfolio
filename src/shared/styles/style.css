@@ -619,7 +619,7 @@ button:focus-visible {
   display: flex;
   flex-direction: column;
 }
-.freebet-work {
+.contests-work {
   background: #f9f8fc;
   color: #2a214e;
 }
@@ -651,11 +651,11 @@ button:focus-visible {
   font-size: 10px;
   letter-spacing: 0.08em;
 }
-.freebet-art {
+.contests-art {
   background: radial-gradient(circle at 20% 30%, #bea9f533, transparent 40%), #e8e2f6;
   color: #59489c;
 }
-.freebet-art strong {
+.contests-art strong {
   font-size: clamp(45px, 6vw, 85px);
 }
 .gameflow-art {

@@ -9,7 +9,7 @@ const pages = [
   'dealer',
   'api',
   'fix',
-  'freebet',
+  'contests',
   'gameflow',
   'messages',
   ...cases.map((item) => `case-${item.slug}`),

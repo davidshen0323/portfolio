@@ -481,8 +481,8 @@
     ]
   },
   {
-    "slug": "freebet",
-    "title": "Freebet 競賽預測平台",
+    "slug": "contests",
+    "title": "競賽預測平台",
     "lead": "Flutter 專案經驗，轉成可以操作的產品流程。",
     "eyebrow": "CASE 08 / 行動產品・競賽流程",
     "meta": ["背景 / 實際開發經驗", "成品 / 自主重建的網頁作品", "角色 / 流程規劃・畫面與互動實作"],
@@ -492,7 +492,7 @@
         "heading": "從實際經驗出發",
         "label": "01 / EXPERIENCE",
         "paragraphs": [
-          "我在 Freebet 的開發經驗包含 Flutter Web／Android／iOS、Riverpod 狀態管理、go_router 路由，以及競賽詳情、參與、結果確認與不同狀態的介面。這份作品保留這些產品情境，用網頁方式重新製作，方便客戶直接體驗。"
+          "我的跨平台競賽產品開發經驗包含 Flutter Web／Android／iOS、Riverpod 狀態管理、go_router 路由，以及競賽詳情、參與、結果確認與不同狀態的介面。這份作品保留這些產品情境，用網頁方式重新製作，方便客戶直接體驗。"
         ],
         "features": [],
         "steps": [],

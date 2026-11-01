@@ -38,7 +38,7 @@ npm run format    # 統一原始碼格式
 | `src/features/dealer/`      | 車源篩選、比較、月付試算與詢問表單            |
 | `src/features/earthquakes/` | USGS 資料存取、取消請求、載入與錯誤狀態       |
 | `src/features/responsive/`  | 修復前後比較與實際尺寸量測                    |
-| `src/features/contests/`    | Freebet 介面、競賽狀態規則與資料 Hooks        |
+| `src/features/contests/`    | 競賽預測介面、競賽狀態規則與資料 Hooks        |
 | `src/features/gameflow/`    | 遊戲事件模型、Canvas 繪圖與 AUTO 生命週期     |
 | `src/shared/components/`    | 對話框、表格、語言切換、提示、共用連結        |
 | `src/shared/hooks/`         | 本機資料同步、倒數計時                        |
@@ -71,7 +71,7 @@ npm run format    # 統一原始碼格式
 
 這是前端作品集，並非正式電商、投注平台或多人遊戲後端。訂單、庫存、客服與競賽使用 localStorage；既有 key 保留，因此原網址上的本機資料可以沿用。不同網域、裝置或清除瀏覽資料後不會同步。
 
-付款、真實登入、權威遊戲伺服器與多人同步沒有實作。Freebet 與 GAMEFLOW 是依實務經驗自主重建的網頁作品，不含公司原始碼或素材。USGS 查詢與 Google Fonts 需要外部網路。
+付款、真實登入、權威遊戲伺服器與多人同步沒有實作。競賽預測與遊戲流程作品 是依實務經驗自主重建的網頁作品，不含公司原始碼或素材。USGS 查詢與 Google Fonts 需要外部網路。
 
 ## 經驗延伸模組
 
