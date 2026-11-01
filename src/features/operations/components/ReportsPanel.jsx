@@ -4,7 +4,7 @@ import { money, formatDate } from '../../../shared/lib/format';
 import { downloadCsv } from '../../../shared/lib/csv';
 import DataTable from '../../../shared/components/DataTable';
 import Panel, { StatusBadge } from './Panel';
-import { orderStatuses } from './OrdersPanel';
+import { orderStatuses } from '../domain/orderWorkflow';
 export default function ReportsPanel({ orders }) {
   const { t, locale } = useI18n();
   const [month, setMonth] = useState('');

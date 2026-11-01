@@ -15,7 +15,9 @@ const Earthquakes = lazy(() => import('../features/earthquakes/EarthquakePage'))
 const Responsive = lazy(() => import('../features/responsive/ResponsivePage'));
 const Contests = lazy(() => import('../features/contests/ContestsPage'));
 const Gameflow = lazy(() => import('../features/gameflow/GameflowPage'));
+const Messages = lazy(() => import('../features/messages/MessagesPage'));
 const routes = {
+  messages: Messages,
   auto: AutoCare,
   cafe: Cafe,
   shop: Shop,

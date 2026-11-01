@@ -6,7 +6,6 @@ import ProjectBanner from '../../shared/components/ProjectBanner';
 import CaseStudyLink from '../../shared/components/CaseStudyLink';
 import AppLink from '../../shared/components/AppLink';
 import Modal from '../../shared/components/Modal';
-import Feedback from '../../shared/components/Feedback';
 import { money } from '../../shared/lib/format';
 import products from './data/products.json';
 import specifications from './data/specifications.json';
@@ -15,6 +14,8 @@ import { STOCK_KEY, placeOrder } from './services/orderRepository';
 import { useCart } from './hooks/useCart';
 import ProductCard, { ProductImage } from './components/ProductCard';
 import '../../shared/styles/shop.css';
+import CheckoutForm from './components/CheckoutForm';
+import './checkout.css';
 
 export default function ShopPage() {
   const { t, locale } = useI18n();
@@ -45,10 +46,9 @@ export default function ShopPage() {
     basket.change(product.id, 1);
     setDialog('cart');
   };
-  const checkout = (event) => {
-    event.preventDefault();
+  const checkout = (options) => {
     try {
-      const created = placeOrder(basket.cart, customer);
+      const created = placeOrder(basket.cart, customer, window.localStorage, options);
       setOrder(created);
       basket.clear();
       setMessage('');
@@ -249,45 +249,13 @@ export default function ShopPage() {
         </div>
       </Modal>
       <Modal open={dialog === 'checkout'} onClose={() => setDialog(null)} title="結帳資料">
-        <form onSubmit={checkout}>
-          <p>{t('此流程不收集付款資料，也不會寄出商品。')}</p>
-          {[
-            ['name', '收件人', 'text'],
-            ['email', '聯絡 Email', 'email'],
-          ].map(([name, label, type]) => (
-            <label key={name}>
-              {t(label)}
-              <input
-                type={type}
-                required
-                maxLength={100}
-                value={customer[name]}
-                onChange={(e) => setCustomer({ ...customer, [name]: e.target.value })}
-              />
-            </label>
-          ))}
-          <label>
-            {t('配送方式')}
-            <select
-              value={customer.delivery}
-              onChange={(e) => setCustomer({ ...customer, delivery: e.target.value })}
-            >
-              {['宅配', '超商取貨'].map((value) => (
-                <option key={value} value={value}>
-                  {t(value)}
-                </option>
-              ))}
-            </select>
-          </label>
-          <div className="cart-total">
-            <span>{t('商品小計')}</span>
-            <b>{money(basket.total, locale)}</b>
-          </div>
-          <Feedback message={message} error />
-          <button className="checkout-btn" type="submit">
-            {t('確認訂單內容')}
-          </button>
-        </form>
+        <CheckoutForm
+          basket={basket}
+          customer={customer}
+          setCustomer={setCustomer}
+          onCheckout={checkout}
+          message={message}
+        />
       </Modal>
       <Modal open={dialog === 'success'} onClose={() => setDialog(null)} title="訂單已建立於此裝置">
         <div className="success">

@@ -1,3 +1,5 @@
+import { useState } from 'react';
+import { transitionOrder } from '../domain/orderWorkflow';
 import { useStoredState } from '../../../shared/hooks/useStoredState';
 import initialOrders from '../data/orders.json';
 import initialBookings from '../data/bookings.json';
@@ -26,6 +28,7 @@ const sampleTickets = [
 ];
 
 export function useOperations() {
+  const [workflowError, setWorkflowError] = useState('');
   const [admin, setAdmin, adminError] = useStoredState('forma-admin-orders', initialOrders);
   const [shop, setShop, shopError] = useStoredState(ORDER_KEY, []);
   const [bookings, setBookings, bookingError] = useStoredState(
@@ -38,7 +41,18 @@ export function useOperations() {
   const orders = [...shop, ...admin.filter((order) => !ids.has(order.id))];
   const updateOrder = (id, status) => {
     const save = ids.has(id) ? setShop : setAdmin;
-    return save((rows) => rows.map((row) => (row.id === id ? { ...row, status } : row)));
+    try {
+      const ok = save((rows) =>
+        rows.map((row) =>
+          row.id === id ? transitionOrder(row, status, new Date().toISOString()) : row,
+        ),
+      );
+      setWorkflowError('');
+      return ok;
+    } catch (error) {
+      setWorkflowError(error.message);
+      return false;
+    }
   };
   return {
     orders,
@@ -51,6 +65,6 @@ export function useOperations() {
     setTickets,
     resetBookings: () => setBookings(initialBookings),
     resetStock: () => setStock(initialStock),
-    error: adminError || shopError || bookingError || stockError || ticketError,
+    error: workflowError || adminError || shopError || bookingError || stockError || ticketError,
   };
 }

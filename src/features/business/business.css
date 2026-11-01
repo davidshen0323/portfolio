@@ -1,0 +1,170 @@
+.page-operations .business-explainer {
+  margin: 0 30px 22px;
+  padding: 18px 22px;
+  background: #edf3ed;
+  border-left: 3px solid #85a894;
+  display: grid;
+  gap: 10px;
+}
+.page-operations .business-explainer strong {
+  font-size: 15px;
+}
+.page-operations .business-explainer span {
+  color: #7c9286;
+  font-size: 12px;
+  line-height: 1.8;
+}
+.page-operations .business-status {
+  border-radius: 30px;
+  background: #e9f0f2;
+  color: #71868d;
+  padding: 7px 12px;
+  font-size: 12px;
+}
+.page-operations .status-pending {
+  background: #fff2d9;
+  color: #8c601c;
+}
+.page-operations .status-approved {
+  background: #e2f1ee;
+  color: #2e776f;
+}
+.page-operations .status-returned {
+  background: #fae7e0;
+  color: #a45c50;
+}
+.page-operations dialog {
+  max-width: 620px;
+  width: 92vw;
+  max-height: 90vh;
+  overflow: auto;
+  border: 1px solid #ccdcdb;
+  border-radius: 14px;
+  padding: 25px;
+  color: #193c4c;
+  background: white;
+}
+.page-operations dialog::backdrop {
+  background: #102b3a99;
+}
+.page-operations .dialog-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.page-operations .dialog-head h2 {
+  font-size: 24px;
+  margin: 0;
+}
+.page-operations .dialog-head button {
+  background: #edf2f2;
+  color: #70868b;
+  border: 0;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 22px;
+}
+.business-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+.business-form label,
+.business-review label {
+  display: grid;
+  gap: 10px;
+  font-size: 13px;
+}
+.business-form input,
+.business-form select,
+.business-form textarea,
+.business-review textarea {
+  width: 100%;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #ccdcd9;
+  border-radius: 6px;
+  background: #fbfdfc;
+  color: inherit;
+  font: inherit;
+}
+.business-form .full {
+  grid-column: 1/-1;
+}
+.business-form .feedback {
+  grid-column: 1/-1;
+  margin: 0;
+}
+.business-total {
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  background: #ecf4ef;
+  padding: 20px;
+  border-radius: 8px;
+}
+.business-total span {
+  font-size: 13px;
+  color: #789386;
+}
+.business-total strong {
+  font-size: 25px;
+  color: #356653;
+}
+.business-primary {
+  background: #254e5b;
+  border: 0;
+  color: #f0f6f2;
+  padding: 13px 20px;
+  border-radius: 6px;
+  font-weight: 700;
+}
+.business-review dl {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 15px;
+  border-top: 1px solid #dce5e2;
+  padding-top: 20px;
+  line-height: 1.7;
+  font-size: 13px;
+}
+.business-review dt {
+  color: #84998e;
+}
+.business-review dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.business-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+.business-note {
+  padding: 15px;
+  background: #f4f3eb;
+  color: #938365;
+  line-height: 1.8;
+  font-size: 13px;
+}
+@media (max-width: 760px) {
+  .business-form {
+    grid-template-columns: 1fr;
+  }
+  .business-form .full {
+    grid-column: auto;
+  }
+  .page-operations .business-explainer {
+    margin: 0 18px 18px;
+    padding: 15px;
+  }
+  .page-operations .sidebar nav button {
+    padding: 10px;
+    font-size: 17px;
+  }
+}

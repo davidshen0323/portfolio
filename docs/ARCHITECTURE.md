@@ -55,8 +55,22 @@
 
 ## 建議先閱讀的檔案
 
-1. `src/app/App.jsx`：看到 9 個作品與解析頁如何組合。
+1. `src/app/App.jsx`：看到 11 個作品與解析頁如何組合。
 2. `src/features/commerce/ShopPage.jsx`：理解 Page 與 Hooks 如何協作。
 3. `src/features/commerce/services/orderRepository.js`：理解外部資料邊界。
 4. `src/features/contests/domain/contestStore.js`：理解純函式處理資料一致性。
 5. `tests/domain/commerce.test.js`：從失敗情境理解規則。
+
+## 經驗延伸功能
+
+`messages/domain` 管理篩選、已讀與去重，`services/localMessageSource` 提供可取消訂閱的事件來源和可中止的分頁請求。列表負責 IntersectionObserver 與載入狀態；手動載入按鈕作為替代操作。
+
+`business/domain` 管理合約狀態轉移、日期和費用驗證、驗收差異與良品計算。`receivingRepository` 重新讀取資料並更新共用庫存，寫入失敗嘗試回復兩筆原值。本機儲存沒有跨分頁交易鎖，操作紀錄也不是不可竄改的伺服器稽核。
+
+`commerce/domain/pricing` 是結帳顯示與下單共用的費用規則；門檻按原價小計判斷，免運按折扣及加價購後金額判斷。下單合併同商品的原價與加價購數量後檢查庫存。城市更換清空行政區，配送方式決定地址或門市欄位。
+
+## 訂單處理與相容舊資料
+
+`operations/domain/orderWorkflow.js` 定義允許的狀態轉換與 CSV 資料投影。待處理可進入處理中或取消；處理中可完成或取消；完成、取消為終態。畫面選項與寫入驗證使用相同規則，避免只在下拉選單限制。每次有效變更在訂單中保存前後狀態與時間，與狀態一起寫入。
+
+詳情頁直接顯示結帳保存的價格快照與收件資料，不依現行商品價格重新推算。舊訂單若無地址或費用拆分則明確顯示缺少紀錄，不補造運費與折扣。狀態變更不代表退款、通知或庫存回補；這些需要獨立的正式業務流程。CSV 只匯出目前篩選結果，透過共用函式處理引號與公式注入。

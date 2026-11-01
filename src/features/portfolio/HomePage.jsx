@@ -11,6 +11,7 @@ import WorkflowSection from './components/WorkflowSection';
 import PortfolioFaq from './components/PortfolioFaq';
 import ProjectBriefSection from './components/ProjectBriefSection';
 import AboutSection from './components/AboutSection';
+import CareerSection from './components/CareerSection';
 
 export default function HomePage() {
   const { t } = useI18n();
@@ -25,6 +26,7 @@ export default function HomePage() {
       </header>
       <main>
         <HomeHero />
+        <CareerSection />
         <ExperienceWork />
         <WorkGallery />
         <CaseStudyIndex />

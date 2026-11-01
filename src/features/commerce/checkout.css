@@ -1,0 +1,94 @@
+.page-shop .delivery-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+.page-shop .checkout-note {
+  display: block;
+  font-size: 11px;
+  line-height: 1.8;
+  color: #8b9c91;
+  margin: 12px 0 20px;
+}
+.page-shop .checkout-promotions {
+  padding: 20px;
+  border: 1px solid #d9e3d8;
+  background: #f4f7f0;
+  border-radius: 8px;
+  margin: 22px 0;
+}
+.page-shop .checkout-promotions h3 {
+  margin: 0 0 10px;
+  font-size: 16px;
+}
+.page-shop .checkout-promotions p,
+.page-shop .checkout-promotions small {
+  font-size: 11px;
+  line-height: 1.9;
+  color: #7e927d;
+}
+.page-shop .coupon-controls {
+  display: flex;
+  gap: 8px;
+  margin: 15px 0;
+}
+.page-shop .coupon-controls input {
+  min-width: 0;
+  flex: 1;
+  padding: 10px;
+}
+.page-shop .coupon-controls button {
+  background: #e3ebe0;
+  border: 0;
+  color: #54724f;
+  padding: 10px 14px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+.page-shop .checkout-promotions .addon-choice {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 10px;
+  font-size: 12px;
+  line-height: 1.8;
+}
+.page-shop .addon-choice input {
+  width: auto;
+  flex: none;
+  margin-top: 5px;
+}
+.page-shop .addon-choice:has(input:disabled) {
+  opacity: 0.5;
+}
+.page-shop .checkout-summary {
+  background: #f0f4ed;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+}
+.page-shop .checkout-summary > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 13px;
+  line-height: 1.7;
+  padding: 8px 0;
+}
+.page-shop .checkout-summary span {
+  color: #7b8d77;
+}
+.page-shop .checkout-summary .summary-grand-total {
+  border-top: 1px solid #cbd9c7;
+  margin-top: 12px;
+  padding-top: 18px;
+  font-size: 18px;
+}
+@media (max-width: 600px) {
+  .page-shop .delivery-fields {
+    grid-template-columns: 1fr;
+  }
+  .page-shop .checkout-promotions {
+    padding: 15px;
+  }
+}

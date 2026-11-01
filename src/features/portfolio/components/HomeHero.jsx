@@ -22,7 +22,7 @@ export default function HomeHero() {
         <span>{'↗'}</span>
       </a>
       <div className="hero-index">
-        {'01 — 09 '}
+        {'01 — 11 '}
         <span>{'SCROLL TO EXPLORE ↓'}</span>
       </div>
     </section>

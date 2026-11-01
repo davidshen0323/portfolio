@@ -14,6 +14,10 @@ import CustomersPanel from './components/CustomersPanel';
 import ReportsPanel from './components/ReportsPanel';
 import SupportPanel from './components/SupportPanel';
 import '../../shared/styles/dashboard.css';
+import ContractsPanel from '../business/components/ContractsPanel';
+import ReceivingPanel from '../business/components/ReceivingPanel';
+import AuditPanel from '../business/components/AuditPanel';
+import '../business/business.css';
 
 const tabs = {
   overview: ['▦', '營運總覽', OverviewPanel],
@@ -23,6 +27,9 @@ const tabs = {
   customers: ['♙', '客戶資料', CustomersPanel],
   reports: ['▥', '營運報表', ReportsPanel],
   support: ['◇', '客服紀錄', SupportPanel],
+  contracts: ['▢', '合約審核', ContractsPanel],
+  receiving: ['⇣', '商家入庫', ReceivingPanel],
+  activity: ['≡', '操作紀錄', AuditPanel],
 };
 export default function OperationsPage() {
   const { t } = useI18n();
@@ -77,7 +84,9 @@ export default function OperationsPage() {
           </p>
         </main>
       </div>
-      <CaseStudyLink slug="dashboard" />
+      <CaseStudyLink
+        slug={['contracts', 'receiving', 'activity'].includes(tab) ? 'business' : 'dashboard'}
+      />
     </Page>
   );
 }

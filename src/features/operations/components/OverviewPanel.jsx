@@ -1,7 +1,7 @@
 import { useI18n } from '../../../shared/i18n/I18nProvider';
 import { money } from '../../../shared/lib/format';
 import Panel, { StatusBadge } from './Panel';
-import { orderStatuses } from './OrdersPanel';
+import { orderStatuses } from '../domain/orderWorkflow';
 export default function OverviewPanel({ orders, bookings, stock, onNavigate }) {
   const { t, locale } = useI18n();
   const revenue = orders.filter((o) => o.status === '已完成').reduce((n, o) => n + o.total, 0);

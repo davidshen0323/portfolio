@@ -11,6 +11,7 @@ const pages = [
   'fix',
   'freebet',
   'gameflow',
+  'messages',
   ...cases.map((item) => `case-${item.slug}`),
 ];
 for (const page of pages) await writeFile(new URL(`../dist/${page}.html`, import.meta.url), shell);

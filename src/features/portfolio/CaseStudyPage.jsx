@@ -18,6 +18,7 @@ export default function CaseStudyPage({ slug }) {
     );
   const item = cases[index];
   const next = cases[(index + 1) % cases.length];
+  const projectHref = item.href || `${slug}.html`;
   return (
     <Page theme="portfolio" title={`${item.title}｜David Shen 作品解析`}>
       <header className="port-header">
@@ -31,7 +32,7 @@ export default function CaseStudyPage({ slug }) {
           <span className="eyebrow">{t(item.eyebrow)}</span>
           <h1>{t(item.title)}</h1>
           <p>{t(item.lead)}</p>
-          <AppLink className="pill" href={`${slug}.html`}>
+          <AppLink className="pill" href={projectHref}>
             {t('開啟作品 ↗')}
           </AppLink>
         </section>
@@ -71,7 +72,7 @@ export default function CaseStudyPage({ slug }) {
                     <li key={text}>{t(text)}</li>
                   ))}
                 </ol>
-                <AppLink className="pill" href={`${slug}.html`}>
+                <AppLink className="pill" href={projectHref}>
                   {t('開始操作 ↗')}
                 </AppLink>
               </>

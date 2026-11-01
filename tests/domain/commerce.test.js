@@ -7,11 +7,18 @@ import {
 } from '../../src/features/commerce/services/orderRepository';
 import products from '../../src/features/commerce/data/products.json';
 import stock from '../../src/features/commerce/data/stock.json';
-const customer = { name: 'Test User', email: 'test@example.com', delivery: '宅配' };
+const customer = {
+  name: 'Test User',
+  email: 'test@example.com',
+  delivery: '宅配',
+  city: '臺北市',
+  district: '內湖區',
+  address: '測試路一段一號',
+};
 describe('local checkout consistency', () => {
   it('creates an order with verified prices and deducts stock', () => {
     const order = placeOrder({ P01: 2 }, customer);
-    expect(order.total).toBe(1960);
+    expect(order.total).toBe(2060);
     expect(JSON.parse(localStorage.getItem(STOCK_KEY)).find((p) => p.id === 'P01').qty).toBe(10);
     expect(JSON.parse(localStorage.getItem(ORDER_KEY))[0].id).toBe(order.id);
     expect(cartTotal(cartItems({ P01: 2 }, products))).toBe(1960);
