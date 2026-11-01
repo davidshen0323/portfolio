@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap');
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: 'DM Sans', 'Noto Sans TC', sans-serif;
+}
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+button {
+  cursor: pointer;
+}
+button:disabled {
+  cursor: default;
+}
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid #80bda9;
+  outline-offset: 3px;
+}
+[class^='page-'] {
+  min-height: calc(100vh - 46px);
+}
+.case-study-link {
+  display: block;
+  padding: 25px;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 14px;
+}
+.feedback {
+  padding: 15px 20px;
+  background: #e8edf8;
+  color: #334057;
+  border-radius: 8px;
+  line-height: 1.8;
+}
+.feedback-error {
+  background: #fae9e4;
+  color: #8d4037;
+}
+.app-loading,
+.app-error {
+  padding: 15vh 7vw;
+  background: #f5f4ee;
+  color: #182731;
+  min-height: 100vh;
+}
+.page-shop .product-detail,
+.page-shop .cart-content {
+  padding: 0 25px 25px;
+}
+.page-shop .product-detail .product-photo {
+  height: 270px;
+}
+.page-dealer .request-preview {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font: inherit;
+  line-height: 1.9;
+  background: #e6eee7;
+  padding: 20px;
+}
+.page-operations main {
+  min-width: 0;
+}
+.page-operations .toolbar > select,
+.page-operations .toolbar input[type='month'] {
+  padding: 10px;
+  border: 1px solid #cbdadb;
+  border-radius: 7px;
+  background: white;
+  color: inherit;
+}
+.page-earthquakes .stat-grid,
+.page-earthquakes .stat-grid > div {
+  min-width: 0;
+}
+.page-earthquakes .stat-grid .latest-time {
+  font-size: clamp(19px, 2.2vw, 30px);
+  overflow-wrap: anywhere;
+}
+.page-earthquakes .event {
+  grid-template-columns: 100px minmax(0, 1fr) 160px 100px;
+}
+.page-earthquakes .status {
+  flex-wrap: wrap;
+  overflow-wrap: anywhere;
+  padding: 15px 0;
+}
+.page-contests .entries-heading {
+  margin-top: 30px;
+}
+.page-contests .participation-form input[type='radio'] {
+  width: auto;
+}
+.page-gameflow .event-list {
+  max-height: 520px;
+  overflow-y: auto;
+}
+@media (max-width: 750px) {
+  .page-earthquakes .event {
+    grid-template-columns: 68px minmax(0, 1fr);
+  }
+}

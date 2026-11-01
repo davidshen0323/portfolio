@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap');
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #0c1421;
+  color: #e8f0f6;
+  font-family: 'DM Sans', 'Noto Sans TC', sans-serif;
+  margin: 0;
+}
+button,
+select {
+  font: inherit;
+}
+button {
+  cursor: pointer;
+}
+button:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+[hidden] {
+  display: none !important;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #91e5db;
+  outline-offset: 4px;
+}
+.project-strip {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 5vw;
+  background: #142331;
+  color: #8fb2bc;
+  font-size: 12px;
+}
+main {
+  max-width: 1600px;
+  padding: 45px 5vw;
+  margin: auto;
+}
+.game-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 35px;
+}
+.eyebrow {
+  letter-spacing: 0.16em;
+  font-size: 11px;
+  color: #64868d;
+  font-weight: 700;
+}
+.game-header h1 {
+  font-size: 46px;
+  letter-spacing: -0.07em;
+  margin: 15px 0 10px;
+}
+.game-header h1 span {
+  color: #91e5db;
+}
+.game-header p {
+  color: #8096a5;
+  font-size: 14px;
+}
+.connection {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: #9bc2c3;
+}
+.connection i {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background: #8be2c1;
+  box-shadow: 0 0 14px #8be2c177;
+}
+.connection button {
+  margin-left: 10px;
+  background: none;
+  border: 1px solid #35505d;
+  color: #89a6b0;
+  padding: 9px 12px;
+  border-radius: 6px;
+  font-size: 11px;
+}
+.game-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  gap: 25px;
+}
+.game-main {
+  min-width: 0;
+}
+.hud {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.hud > div {
+  background: #142331;
+  border: 1px solid #263a48;
+  border-radius: 10px;
+  padding: 18px;
+}
+.hud small {
+  font-size: 11px;
+  color: #7796a3;
+}
+.hud strong {
+  display: block;
+  font-size: 28px;
+  letter-spacing: -0.04em;
+  margin-top: 10px;
+}
+.hud > div:first-child strong {
+  color: #a0e6c7;
+}
+.hud > div:last-child strong {
+  font-size: 22px;
+}
+.room-lobby {
+  background: radial-gradient(ellipse at 80% 20%, #23525f66, transparent 60%), #132435;
+  border: 1px solid #294352;
+  border-radius: 14px;
+  padding: 42px;
+  min-height: 445px;
+}
+.lobby-title h2 {
+  font-size: 32px;
+  letter-spacing: -0.04em;
+}
+.lobby-title p {
+  color: #8ea6b4;
+  line-height: 1.8;
+  font-size: 14px;
+}
+.room-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-top: 30px;
+}
+.room-grid button {
+  text-align: left;
+  color: #daecef;
+  border: 1px solid #3b656e;
+  border-radius: 10px;
+  padding: 25px;
+  background: linear-gradient(145deg, #26606c, #142e41);
+}
+.room-grid button:last-child {
+  background: linear-gradient(145deg, #243a67, #122031);
+  border-color: #405b87;
+}
+.room-number {
+  color: #8fc9c9;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+}
+.room-grid h3 {
+  font-size: 24px;
+  margin: 16px 0 8px;
+}
+.room-grid p {
+  color: #9bb8c0;
+  font-size: 12px;
+}
+.room-enter {
+  display: block;
+  padding-top: 20px;
+  font-size: 12px;
+  color: #adf2df;
+}
+.arena-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 20px;
+  background: #192d3e;
+  border-radius: 10px 10px 0 0;
+  font-size: 13px;
+}
+.arena-top button {
+  background: none;
+  border: 0;
+  color: #9abcd0;
+  font-size: 12px;
+}
+.arena {
+  position: relative;
+  background: #103140;
+  overflow: hidden;
+}
+.arena canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 900/480;
+  cursor: crosshair;
+  touch-action: manipulation;
+}
+.arena-caption {
+  position: absolute;
+  left: 20px;
+  bottom: 15px;
+  color: #9ac9c677;
+  font-size: 11px;
+  pointer-events: none;
+}
+.battle-controls {
+  background: #162938;
+  padding: 20px;
+  display: flex;
+  gap: 15px;
+  align-items: end;
+  border-radius: 0 0 10px 10px;
+  flex-wrap: wrap;
+}
+.battle-controls label {
+  font-size: 11px;
+  color: #88a6b2;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+.battle-controls select {
+  background: #203c4c;
+  border: 1px solid #335463;
+  border-radius: 6px;
+  color: #c7e1e4;
+  padding: 10px;
+  min-width: 0;
+  width: 100%;
+  font-size: 12px;
+}
+.fire-button {
+  background: #9ce5d2;
+  color: #164239;
+  padding: 12px 23px;
+  border-radius: 6px;
+  border: 0;
+  font-size: 13px;
+  font-weight: 700;
+}
+.auto-button {
+  background: #203b4a;
+  color: #89b3ba;
+  border: 1px solid #335c68;
+  padding: 11px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+.auto-button[aria-pressed='true'] {
+  background: #315c54;
+  color: #b9f2d3;
+  border-color: #78b9a0;
+}
+.arena-note {
+  color: #657f90;
+  font-size: 11px;
+  line-height: 1.8;
+}
+.event-panel {
+  background: #101e2b;
+  border: 1px solid #263c49;
+  border-radius: 12px;
+  padding: 24px;
+  min-width: 0;
+  align-self: start;
+}
+.panel-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.panel-title h2 {
+  font-size: 22px;
+  margin: 8px 0 0;
+}
+.panel-title > span {
+  background: #233b49;
+  color: #b5dfda;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+.event-panel > p {
+  color: #7893a0;
+  line-height: 1.8;
+  font-size: 12px;
+}
+.event-tools {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+.event-tools button {
+  background: none;
+  border: 1px solid #33505c;
+  border-radius: 5px;
+  color: #97bec1;
+  padding: 8px;
+  font-size: 11px;
+}
+#eventList {
+  max-height: 520px;
+  overflow-y: auto;
+}
+.event-entry {
+  border-top: 1px solid #253b48;
+  padding: 15px 0;
+  overflow-wrap: anywhere;
+}
+.event-entry > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.event-entry b {
+  color: #9fdbd2;
+  font-size: 10px;
+  letter-spacing: 0.03em;
+}
+.event-entry small {
+  color: #5c7b8a;
+  font-size: 10px;
+}
+.event-entry p {
+  color: #9ab0bf;
+  font-size: 12px;
+  line-height: 1.7;
+  margin: 8px 0 0;
+}
+.event-empty {
+  font-size: 12px;
+  color: #678494;
+  padding: 35px 0;
+  text-align: center;
+}
+.game-principles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 30px;
+}
+.game-principles span {
+  font-size: 10px;
+  color: #538e94;
+  letter-spacing: 0.1em;
+}
+.game-principles h3 {
+  font-size: 15px;
+}
+.game-principles p {
+  color: #7994a3;
+  font-size: 12px;
+  line-height: 1.8;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  border-top: 1px solid #213745;
+  padding-top: 22px;
+  margin-top: 40px;
+  font-size: 11px;
+  color: #5a7888;
+  line-height: 1.9;
+}
+footer p {
+  max-width: 850px;
+}
+footer button {
+  background: none;
+  border: 0;
+  color: #85b5b6;
+  white-space: nowrap;
+  text-decoration: underline;
+}
+.game-notice {
+  padding: 15px;
+  background: #213746;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+@media (max-width: 1100px) {
+  .game-layout {
+    grid-template-columns: 1fr;
+  }
+  .event-panel {
+    margin-top: 5px;
+  }
+  #eventList {
+    max-height: 320px;
+  }
+}
+@media (max-width: 640px) {
+  main {
+    padding: 30px 5vw;
+  }
+  .game-header {
+    display: block;
+  }
+  .connection {
+    margin-top: 25px;
+  }
+  .game-header h1 {
+    font-size: 38px;
+  }
+  .hud {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .hud > div {
+    padding: 15px;
+  }
+  .hud strong {
+    font-size: 25px;
+  }
+  .room-lobby {
+    padding: 25px;
+    min-height: 0;
+  }
+  .lobby-title h2 {
+    font-size: 26px;
+  }
+  .room-grid {
+    grid-template-columns: 1fr;
+  }
+  .room-grid button {
+    padding: 20px;
+  }
+  .room-grid h3 {
+    font-size: 22px;
+  }
+  .battle-controls {
+    gap: 12px;
+    padding: 15px;
+  }
+  .battle-controls label {
+    flex-basis: 40%;
+  }
+  .fire-button,
+  .auto-button {
+    flex: 1;
+  }
+  .game-principles {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+  .game-principles h3 {
+    margin: 12px 0 8px;
+  }
+  .game-principles p {
+    margin: 0 0 15px;
+  }
+  .event-panel {
+    padding: 20px;
+  }
+  footer {
+    display: block;
+  }
+  .project-strip {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,122 @@
+.language-bar {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+  padding: 8px 5vw;
+  min-height: 46px;
+  background: #182731;
+  color: #e5ece7;
+  border-bottom: 1px solid #ffffff22;
+  font:
+    12px/1.4 system-ui,
+    -apple-system,
+    sans-serif;
+  position: relative;
+  z-index: 100;
+}
+.language-caption {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  color: #a6b8b1;
+}
+.language-bar > div {
+  display: flex;
+  gap: 4px;
+}
+.language-bar button {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  color: #c4d3cb;
+  background: transparent;
+  padding: 6px 11px;
+  font: inherit;
+  cursor: pointer;
+}
+.language-bar button[aria-pressed='true'] {
+  background: #d6f36a;
+  color: #182731;
+}
+.language-bar button:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+html[lang='en'] h1,
+html[lang='en'] h2,
+html[lang='en'] h3 {
+  overflow-wrap: break-word;
+}
+html[lang='en'] .port-hero h1 {
+  font-size: clamp(44px, 7vw, 106px);
+  letter-spacing: -0.055em;
+}
+html[lang='en'] .work-card h2 {
+  font-size: clamp(30px, 3.8vw, 56px);
+}
+html[lang='en'] .feature-banner h2 {
+  font-size: clamp(27px, 3vw, 40px);
+}
+html[lang='en'] .sidebar nav button {
+  font-size: 12px;
+}
+html[lang='en'] .app-side nav button {
+  font-size: 13px;
+}
+html[lang='en'] .game-principles h3 {
+  line-height: 1.6;
+}
+html[lang='en'] .point-wallet {
+  flex-wrap: wrap;
+}
+html[lang='en'] .ticket-form {
+  grid-template-columns: 2fr 1fr 1fr auto;
+}
+html[lang='en'] .demo-banner {
+  gap: 15px;
+  flex-wrap: wrap;
+}
+html[lang='en'] .choices > div {
+  overflow-wrap: anywhere;
+}
+html[lang='en'] .battle-controls {
+  flex-wrap: wrap;
+}
+html[lang='en'] .header-cta {
+  white-space: nowrap;
+}
+@media (max-width: 720px) {
+  .language-bar {
+    padding: 8px 5vw;
+  }
+  html[lang='en'] .port-hero h1 {
+    font-size: clamp(42px, 10vw, 64px);
+  }
+  html[lang='en'] .experience-card h3 {
+    font-size: 23px;
+  }
+  html[lang='en'] .case-hero h1 {
+    font-size: clamp(34px, 8vw, 54px);
+  }
+  html[lang='en'] .ticket-form {
+    grid-template-columns: 1fr;
+  }
+  html[lang='en'] .app-side nav button {
+    font-size: 11px;
+  }
+  html[lang='en'] .summary-grid small {
+    font-size: 9px;
+  }
+  html[lang='en'] .game-header h1 {
+    font-size: 38px;
+  }
+  html[lang='en'] .connection {
+    flex-wrap: wrap;
+  }
+  html[lang='en'] .side-select {
+    grid-template-columns: 1fr;
+  }
+  html[lang='en'] .port-header {
+    gap: 20px;
+  }
+}

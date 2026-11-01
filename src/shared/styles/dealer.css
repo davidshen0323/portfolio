@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap');
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background: #e9ece7;
+  color: #182a2c;
+  font-family: 'DM Sans', 'Noto Sans TC', sans-serif;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+.demo-banner {
+  background: #d5eab3;
+  padding: 8px 5vw;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 700;
+}
+.demo-banner a {
+  text-decoration: underline;
+}
+header {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5vw;
+  background: #e9ece7;
+}
+.logo {
+  font-size: 24px;
+  letter-spacing: 0.14em;
+  font-weight: 700;
+  line-height: 0.9;
+}
+.logo span {
+  display: block;
+  font-size: 9px;
+  letter-spacing: 0.21em;
+  margin-top: 9px;
+}
+nav {
+  display: flex;
+  gap: 35px;
+  font-size: 14px;
+}
+.header-cta {
+  border: 1px solid #45605c;
+  padding: 12px 20px;
+  font-size: 13px;
+}
+.hero {
+  min-height: 690px;
+  background:
+    linear-gradient(90deg, #0c1c21e6, #0c1c2170 50%, #0c1c2100),
+    url('/dealer-hero.png') center/cover,
+    #32494b;
+  color: #f3f5ee;
+  padding: 115px 8vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.kicker {
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+}
+.hero h1 {
+  font-size: clamp(50px, 6.5vw, 98px);
+  line-height: 1.16;
+  letter-spacing: -0.07em;
+  margin: 36px 0 20px;
+}
+.hero p {
+  font-size: 17px;
+  line-height: 1.8;
+  max-width: 450px;
+}
+.primary {
+  display: inline-flex;
+  gap: 80px;
+  padding: 17px 22px;
+  background: #d5eab3;
+  color: #14252a;
+  font-weight: 700;
+  margin-top: 29px;
+}
+.hero-caption {
+  position: absolute;
+  right: 5vw;
+  bottom: 30px;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+}
+.intro {
+  padding: 100px 8vw 35px;
+}
+.intro h2,
+.process h2,
+.inquiry h2 {
+  font-size: clamp(40px, 5vw, 72px);
+  letter-spacing: -0.07em;
+  margin: 20px 0;
+}
+.intro p {
+  color: #647a74;
+  font-size: 17px;
+}
+.inventory {
+  padding: 0 8vw 110px;
+}
+.filters {
+  display: flex;
+  align-items: end;
+  gap: 14px;
+  margin: 25px 0;
+}
+.filters label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 13px;
+  color: #5b716b;
+}
+.filters select {
+  width: 180px;
+  background: #f8faf6;
+  border: 1px solid #bdcac4;
+  padding: 13px;
+  color: #243b3b;
+  border-radius: 4px;
+}
+.filters > span {
+  margin-left: auto;
+  color: #678078;
+  font-size: 13px;
+}
+.cars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 19px;
+}
+.car {
+  background: #fbfcf9;
+}
+.car-photo {
+  height: 240px;
+  background-size: cover;
+  background-position: center;
+}
+.car-photo.sedan {
+  background-position: 37% center;
+}
+.car-photo.suv {
+  background-position: 67% center;
+}
+.car-photo.coupe {
+  background-position: 90% center;
+}
+.car-body {
+  padding: 22px;
+}
+.car-body > span {
+  font-size: 11px;
+  letter-spacing: 0.13em;
+  color: #6e8580;
+}
+.car-body h3 {
+  font-size: 22px;
+  margin: 12px 0;
+}
+.spec {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 13px;
+  color: #667e79;
+  margin: 20px 0;
+}
+.car-bottom {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  border-top: 1px solid #d6dfda;
+  padding-top: 20px;
+}
+.car-bottom b {
+  font-size: 22px;
+}
+.car-bottom button {
+  background: #203b3e;
+  color: white;
+  border: 0;
+  padding: 10px 14px;
+  cursor: pointer;
+}
+.note {
+  color: #6b807b;
+  font-size: 12px;
+  line-height: 1.7;
+}
+.process {
+  background: #173037;
+  color: #eff4ec;
+  padding: 105px 8vw;
+}
+.process > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.process h2 {
+  font-size: clamp(35px, 4.5vw, 65px);
+}
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  margin-top: 60px;
+}
+.steps article {
+  border-top: 1px solid #799491;
+  padding-top: 30px;
+}
+.steps b {
+  color: #b8d3b5;
+}
+.steps h3 {
+  font-size: 24px;
+  margin: 45px 0 12px;
+}
+.steps p {
+  line-height: 1.8;
+  color: #bbceca;
+}
+.inquiry {
+  padding: 110px 8vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9vw;
+}
+.inquiry > div > p {
+  line-height: 1.8;
+  color: #647a74;
+}
+.inquiry form {
+  display: grid;
+  gap: 20px;
+}
+.inquiry label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 700;
+}
+.inquiry input,
+.inquiry select,
+.inquiry textarea {
+  width: 100%;
+  background: #f8faf6;
+  border: 1px solid #b7c8c0;
+  padding: 14px;
+  outline-color: #2d6a66;
+  font-size: 15px;
+}
+.inquiry button {
+  background: #203b3e;
+  color: #fff;
+  border: 0;
+  padding: 17px;
+  cursor: pointer;
+}
+.inquiry #summary {
+  background: #dae8dd;
+  padding: 20px;
+  line-height: 1.8;
+  white-space: pre-line;
+  font-size: 14px;
+}
+footer {
+  background: #132a30;
+  color: #d9e6dc;
+  padding: 32px 5vw;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+}
+dialog {
+  border: 0;
+  padding: 0;
+  max-width: 700px;
+  width: calc(100% - 30px);
+  box-shadow: 0 15px 80px #0006;
+  background: #f9fbf6;
+  color: #1d3535;
+}
+dialog::backdrop {
+  background: #0c1d20b9;
+}
+.close {
+  position: absolute;
+  right: 12px;
+  top: 9px;
+  border: 0;
+  background: white;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  font-size: 26px;
+  cursor: pointer;
+}
+.detail-photo {
+  height: 300px;
+  background: url('/dealer-hero.png') center/cover;
+}
+.detail-copy {
+  padding: 30px;
+}
+.detail-copy h2 {
+  margin: 8px 0;
+  font-size: 32px;
+}
+.detail-copy ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+.detail-copy li {
+  background: #e8efe9;
+  padding: 12px;
+}
+.detail-copy p {
+  line-height: 1.8;
+}
+@media (max-width: 800px) {
+  header nav {
+    display: none;
+  }
+  .hero {
+    min-height: 610px;
+    padding: 70px 6vw;
+    background-position: 63% center;
+  }
+  .hero h1 {
+    font-size: 52px;
+  }
+  .intro,
+  .inventory,
+  .process,
+  .inquiry {
+    padding-left: 6vw;
+    padding-right: 6vw;
+  }
+  .intro {
+    padding-top: 75px;
+  }
+  .filters {
+    flex-wrap: wrap;
+  }
+  .filters label {
+    flex: 1;
+    min-width: 130px;
+  }
+  .filters select {
+    width: 100%;
+  }
+  .filters > span {
+    width: 100%;
+    margin: 0;
+  }
+  .cars {
+    grid-template-columns: 1fr;
+  }
+  .car-photo {
+    height: 260px;
+  }
+  .process > div:first-child,
+  .inquiry {
+    display: block;
+  }
+  .steps {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .steps h3 {
+    margin: 20px 0 10px;
+  }
+  .inquiry form {
+    margin-top: 40px;
+  }
+  footer {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+}
+
+.sell {
+  background: #d7e2dc;
+  padding: 105px 8vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9vw;
+}
+.sell h2 {
+  font-size: clamp(40px, 5vw, 72px);
+  letter-spacing: -0.07em;
+  margin: 20px 0;
+}
+.sell p {
+  line-height: 1.8;
+  color: #5d7670;
+}
+.sell form {
+  display: grid;
+  gap: 20px;
+}
+.sell label {
+  display: grid;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 700;
+}
+.sell input,
+.sell textarea {
+  width: 100%;
+  background: #f8faf6;
+  border: 1px solid #b7c8c0;
+  padding: 14px;
+  outline-color: #2d6a66;
+  font-size: 15px;
+}
+.sell-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 13px;
+}
+.sell button {
+  background: #203b3e;
+  color: #fff;
+  border: 0;
+  padding: 17px;
+  cursor: pointer;
+}
+.sell #sellSummary {
+  background: #e9f0e9;
+  padding: 20px;
+  line-height: 1.8;
+  white-space: pre-line;
+  font-size: 14px;
+}
+@media (max-width: 800px) {
+  .sell {
+    display: block;
+    padding: 80px 6vw;
+  }
+  .sell form {
+    margin-top: 40px;
+  }
+  header nav {
+    display: none;
+  }
+}
+.portfolio-extra {
+  padding: 75px 7vw;
+  border-top: 1px solid #c8d4cf;
+}
+.portfolio-extra h2 {
+  font-size: clamp(30px, 4vw, 48px);
+  letter-spacing: -0.04em;
+}
+.portfolio-extra p {
+  line-height: 1.8;
+}
+.compare-choices {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+.compare-choices label {
+  padding: 15px;
+  background: #e5ece5;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.compare-table {
+  overflow-x: auto;
+}
+.compare-table table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 520px;
+}
+.compare-table th,
+.compare-table td {
+  text-align: left;
+  padding: 20px;
+  border-bottom: 1px solid #cad7ce;
+}
+.loan-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+.loan-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.loan-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.loan-form input,
+.loan-form select {
+  width: 100%;
+  min-width: 0;
+  padding: 14px;
+  font: inherit;
+  border: 1px solid #adbcaf;
+  background: white;
+  border-radius: 5px;
+}
+.loan-form button {
+  padding: 16px;
+  border: 0;
+  background: #172e32;
+  color: white;
+  font: inherit;
+  cursor: pointer;
+}
+.loan-form p {
+  grid-column: 1/-1;
+  font-weight: 700;
+  white-space: pre-line;
+}
+.dealer-faq details {
+  border-bottom: 1px solid #c8d4cf;
+  padding: 20px 0;
+}
+.dealer-faq summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+@media (max-width: 720px) {
+  .portfolio-extra {
+    padding: 50px 6vw;
+  }
+  .loan-section {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .loan-form {
+    gap: 12px;
+  }
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "P01",
+    "name": "皮革鑰匙套",
+    "category": "車內",
+    "price": 980,
+    "qty": 12
+  },
+  {
+    "id": "P02",
+    "name": "保溫隨行杯",
+    "category": "生活",
+    "price": 1280,
+    "qty": 8
+  },
+  {
+    "id": "P03",
+    "name": "超細纖維布",
+    "category": "清潔",
+    "price": 380,
+    "qty": 4
+  },
+  {
+    "id": "P04",
+    "name": "磁吸手機支架",
+    "category": "車內",
+    "price": 790,
+    "qty": 15
+  },
+  {
+    "id": "P05",
+    "name": "車用擴香",
+    "category": "車內",
+    "price": 690,
+    "qty": 3
+  },
+  {
+    "id": "P06",
+    "name": "便攜打氣機",
+    "category": "清潔",
+    "price": 2480,
+    "qty": 7
+  }
+]

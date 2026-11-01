@@ -1,0 +1,647 @@
+[
+  {
+    "slug": "auto",
+    "title": "FORM 汽車美容",
+    "lead": "讓訪客快速理解服務差異，找到適合的保養方案。",
+    "eyebrow": "CASE 01 / 品牌網站",
+    "meta": ["類型 / 品牌網站", "角色 / 頁面規劃・視覺編排・互動實作", "性質 / 自主作品"],
+    "image": "auto-hero.png",
+    "sections": [
+      {
+        "heading": "需求情境",
+        "label": "01 / CONTEXT",
+        "paragraphs": [
+          "汽車美容店需要把服務、方案與預約入口整理在同一條閱讀路線，避免訪客只看到漂亮照片，卻不知道下一步。"
+        ],
+        "features": [],
+        "steps": [],
+        "scope": false
+      },
+      {
+        "heading": "把需求拆成具體功能",
+        "label": "02 / SOLUTION",
+        "paragraphs": [],
+        "features": [
+          {
+            "title": "服務分層",
+            "body": "由日常清潔到完整整理，依使用需求安排方案。"
+          },
+          {
+            "title": "預約引導",
+            "body": "把詢問入口放在方案閱讀後，縮短尋找聯絡方式的路徑。"
+          },
+          {
+            "title": "行動閱讀",
+            "body": "以單欄排列服務與價格，讓手機使用者能逐項比較。"
+          }
+        ],
+        "steps": [],
+        "scope": false
+      },
+      {
+        "heading": "你可以這樣操作",
+        "label": "03 / WALKTHROUGH",
+        "paragraphs": [],
+        "features": [],
+        "steps": ["查看首頁的服務定位", "比較方案與保養項目", "使用頁面的預約引導"],
+        "scope": false
+      },
+      {
+        "heading": "畫面與互動的考量",
+        "label": "04 / DESIGN",
+        "paragraphs": ["深色車體影像搭配留白，先建立品牌語氣，再用短段落解釋服務。"],
+        "features": [],
+        "steps": [],
+        "scope": false
+      },
+      {
+        "heading": "目前實作範圍",
+        "label": "05 / SCOPE",
+        "paragraphs": ["品牌、服務文案與視覺編排屬自主創作；尚未串接真實預約或付款。"],
+        "features": [],
+        "steps": [],
+        "scope": true
+      }
+    ]
+  },
+  {
+    "slug": "cafe",
+    "title": "日常留白 咖啡工作室",
+    "lead": "把品牌氛圍轉成能閱讀、能找到資訊的網站。",
+    "eyebrow": "CASE 02 / 品牌網站",
+    "meta": ["類型 / 品牌網站", "角色 / 頁面規劃・視覺編排・互動實作", "性質 / 自主作品"],
+    "image": "cafe-hero.png",
+    "sections": [
+      {
+        "heading": "需求情境",
+        "label": "01 / CONTEXT",
+        "paragraphs": [
+          "咖啡店的網站需要同時回答品牌特色、提供什麼，以及如何到訪；資訊必須清楚，又不破壞安靜的品牌感。"
+        ],
+        "features": [],
+        "steps": [],
+        "scope": false
+      },
+      {
+        "heading": "把需求拆成具體功能",
+        "label": "02 / SOLUTION",
+        "paragraphs": [],
+        "features": [
+          {
+            "title": "品牌故事",
+            "body": "以空間與日常節奏建立閱讀起點。"
+          },
+          {
+            "title": "產品編排",
+            "body": "讓飲品與品牌文字有各自的閱讀層級。"
+          },
+          {
+            "title": "到訪資訊",
+            "body": "集中營業與到訪內容，減少來回尋找。"
+          }
+        ],
+        "steps": [],
+        "scope": false
+      },
+      {
+        "heading": "你可以這樣操作",
+        "label": "03 / WALKTHROUGH",
+        "paragraphs": [],
+        "features": [],
+        "steps": ["閱讀品牌故事", "瀏覽飲品與空間內容", "找到到訪資訊"],
+        "scope": false
+      },
+      {
+        "heading": "畫面與互動的考量",
+        "label": "04 / DESIGN",
+        "paragraphs": ["暖色背景、植物綠與中文大字建立視覺辨識，手機版保留清楚的段落間距。"],
+        "features": [],
+        "steps": [],
+        "scope": false
+      },
+      {
+        "heading": "目前實作範圍",
+        "label": "05 / SCOPE",
+        "paragraphs": ["品牌為自主設定；頁面資訊不是實際營業店家的公告。"],
+        "features": [],
+        "steps": [],
+        "scope": true
+      }
+    ]
+  },
+  {
+    "slug": "dashboard",
+    "title": "FORMA 營運管理工作台",
+    "lead": "讓訂單、預約與庫存成為可追蹤的工作流程。",
+    "eyebrow": "CASE 03 / 營運介面",
+    "meta": ["類型 / 營運介面", "角色 / 頁面規劃・視覺編排・互動實作", "性質 / 自主作品"],
+    "image": null,
+    "sections": [
+      {
+        "heading": "需求情境",
+        "label": "01 / CONTEXT",
+        "paragraphs": [
+          "小型商家每天在訂單、預約與客服之間切換，需要快速看見待辦，並知道哪些資料需要處理。"
+        ],
+        "features": [],
+        "steps": [],
+        "scope": false
+      },
+      {
+        "heading": "把需求拆成具體功能",
+        "label": "02 / SOLUTION",
+        "paragraphs": [],
+        "features": [
+          {
+            "title": "跨頁資料",
+            "body": "AXIS 下單後，同裝置後台可讀取訂單與扣除後的庫存。"
+          },
+          {
+            "title": "營運報表",
+            "body": "依月份與狀態彙整訂單，匯出目前篩選的 CSV。"
+          },
+          {
+            "title": "客服紀錄",
+            "body": "建立問題紀錄、設定優先程度，並追蹤處理狀態。"
+          }
+        ],
+        "steps": [],
+        "scope": false
+      },
+      {
+        "heading": "你可以這樣操作",
+        "label": "03 / WALKTHROUGH",
+        "paragraphs": [],
+        "features": [],
+        "steps": [
+          "先到 AXIS 建立一筆訂單",
+          "在訂單管理更新狀態",
+          "查看報表並匯出資料",
+          "建立客服紀錄並追蹤進度"
+        ],
+        "scope": false
+      },
+      {
+        "heading": "畫面與互動的考量",
+        "label": "04 / DESIGN",
+        "paragraphs": ["以任務優先的總覽帶出各管理頁；表格保留欄位完整性，窄螢幕使用橫向捲動。"],
+        "features": [],
+        "steps": [],
+        "scope": false
+      },
+      {
+        "heading": "目前實作範圍",
+        "label": "05 / SCOPE",
+        "paragraphs": ["資料僅儲存在目前瀏覽器，沒有伺服器、帳號權限或多人同步。"],
+        "features": [],
+        "steps": [],
+        "scope": true
+      }
+    ]
+  },
+  {
+    "slug": "api",
+    "title": "FIELDNOTE 地震資料",
+    "lead": "把公開資料變成可以查詢與閱讀的介面。",
+    "eyebrow": "CASE 04 / API 串接",
+    "meta": ["類型 / API 串接", "角色 / 頁面規劃・視覺編排・互動實作", "性質 / 自主作品"],
+    "image": null,
+    "sections": [
+      {
+        "heading": "需求情境",
+        "label": "01 / CONTEXT",
+        "paragraphs": [
+          "原始資料含有時間、座標、規模等欄位；查詢介面需要整理條件，並讓使用者理解載入、無結果與失敗狀態。"
+        ],
+        "features": [],
+        "steps": [],
+        "scope": false
+      },
+      {
+        "heading": "把需求拆成具體功能",
+        "label": "02 / SOLUTION",
+        "paragraphs": [],
+        "features": [
+          {
+            "title": "查詢條件",
+            "body": "依時間區間與最低規模發送公開資料查詢。"
+          },
+          {
+            "title": "狀態處理",
+            "body": "提供載入提示、空結果與失敗重試。"
+          },
+          {
+            "title": "結果閱讀",
+            "body": "呈現時間、地點與規模，並分頁整理查詢結果。"
+          }
+        ],
+        "steps": [],
+        "scope": false
+      },
+      {
+        "heading": "你可以這樣操作",
+        "label": "03 / WALKTHROUGH",
+        "paragraphs": [],
+        "features": [],
+        "steps": ["選擇時間範圍與規模", "發送查詢並觀察狀態", "閱讀結果、切換頁數"],
+        "scope": false
+      },
+      {
+        "heading": "畫面與互動的考量",
+        "label": "04 / DESIGN",
+        "paragraphs": ["優先顯示最常閱讀的地點與規模，將查詢條件集中於結果上方。"],
+        "features": [],
+        "steps": [],
+        "scope": false
+      },
+      {
+        "heading": "目前實作範圍",
+        "label": "05 / SCOPE",
+        "paragraphs": [
+          "依賴 USGS 公開 API 的連線與資料狀態；目前執行環境尚未驗證成功回應，不作為災害警報工具。"
+        ],
+        "features": [],
+        "steps": [],
+        "scope": true
+      }
+    ]
+  },
+  {
+    "slug": "fix",
+    "title": "手機版跑版修復",
+    "lead": "讓問題、原因與修復效果可以直接比較。",
+    "eyebrow": "CASE 05 / 介面修復",
+    "meta": ["類型 / 介面修復", "角色 / 頁面規劃・視覺編排・互動實作", "性質 / 自主作品"],
+    "image": null,
+    "sections": [
+      {
+        "heading": "需求情境",
+        "label": "01 / CONTEXT",
+        "paragraphs": [
+          "固定寬度的內容容易在手機版超出畫面；修復案例應具體指出溢出來源，而不是只放一張完工截圖。"
+        ],
+        "features": [],
+        "steps": [],
+        "scope": false
+      },
+      {
+        "heading": "把需求拆成具體功能",
+        "label": "02 / SOLUTION",
+        "paragraphs": [],
+        "features": [
+          {
+            "title": "前後切換",
+            "body": "保留固定寬度版本與響應式版本，直接比較。"
+          },
+          {
+            "title": "寬度調整",
+            "body": "透過滑桿改變容器寬度，觀察斷點行為。"
+          },
+          {
+            "title": "尺寸量測",
+            "body": "使用 scrollWidth 與 clientWidth 顯示溢出數值。"
+          }
+        ],
+        "steps": [],
+        "scope": false
+      },
+      {
+        "heading": "你可以這樣操作",
+        "label": "03 / WALKTHROUGH",
+        "paragraphs": [],
+        "features": [],
+        "steps": ["縮小測試容器寬度", "切換修復前與修復後", "比較水平溢出值"],
+        "scope": false
+      },
+      {
+        "heading": "畫面與互動的考量",
+        "label": "04 / DESIGN",
+        "paragraphs": ["保留相同內容，讓差異集中在寬度與排版行為，方便理解修復原因。"],
+        "features": [],
+        "steps": [],
+        "scope": false
+      },
+      {
+        "heading": "目前實作範圍",
+        "label": "05 / SCOPE",
+        "paragraphs": ["這是自主建立的問題案例，並非已交付的客戶維修紀錄。"],
+        "features": [],
+        "steps": [],
+        "scope": true
+      }
+    ]
+  },
+  {
+    "slug": "dealer",
+    "title": "ATELIER SELECT 外匯車",
+    "lead": "從找車、比較到整理詢問需求，串成一段完整旅程。",
+    "eyebrow": "CASE 06 / 汽車買賣",
+    "meta": ["類型 / 汽車買賣", "角色 / 頁面規劃・視覺編排・互動實作", "性質 / 自主作品"],
+    "image": "dealer-hero.png",
+    "sections": [
+      {
+        "heading": "需求情境",
+        "label": "01 / CONTEXT",
+        "paragraphs": [
+          "買車者需要依預算縮小選擇、比較年份里程，再整理想問的問題；售車者則需要另一個清楚的填寫入口。"
+        ],
+        "features": [],
+        "steps": [],
+        "scope": false
+      },
+      {
+        "heading": "把需求拆成具體功能",
+        "label": "02 / SOLUTION",
+        "paragraphs": [],
+        "features": [
+          {
+            "title": "條件篩選",
+            "body": "依車型與預算篩選，並調整售價排序。"
+          },
+          {
+            "title": "比較與試算",
+            "body": "以並列表格比較車款，再用自備款、期數與利率估算月付。"
+          },
+          {
+            "title": "買賣雙入口",
+            "body": "購車詢問與委託售車各有獨立表單與內容預覽。"
+          }
+        ],
+        "steps": [],
+        "scope": false
+      },
+      {
+        "heading": "你可以這樣操作",
+        "label": "03 / WALKTHROUGH",
+        "paragraphs": [],
+        "features": [],
+        "steps": [
+          "篩選符合預算的車款",
+          "選擇兩台以上加入比較",
+          "設定貸款條件查看估算",
+          "預覽詢問或售車需求"
+        ],
+        "scope": false
+      },
+      {
+        "heading": "畫面與互動的考量",
+        "label": "04 / DESIGN",
+        "paragraphs": ["降低規格閱讀負擔，先顯示價格、年份、里程，再讓有興趣的訪客開啟詳情。"],
+        "features": [],
+        "steps": [],
+        "scope": false
+      },
+      {
+        "heading": "目前實作範圍",
+        "label": "05 / SCOPE",
+        "paragraphs": [
+          "概念車源並非實際在售；月付為數學估算，不含費用且不是金融機構報價；表單不傳送給車商。"
+        ],
+        "features": [],
+        "steps": [],
+        "scope": true
+      }
+    ]
+  },
+  {
+    "slug": "shop",
+    "title": "AXIS 汽車生活選物",
+    "lead": "把商品探索、購物車與訂單管理接在一起。",
+    "eyebrow": "CASE 07 / 電子商務",
+    "meta": ["類型 / 電子商務", "角色 / 頁面規劃・視覺編排・互動實作", "性質 / 自主作品"],
+    "image": "products.png",
+    "sections": [
+      {
+        "heading": "需求情境",
+        "label": "01 / CONTEXT",
+        "paragraphs": [
+          "選物商店需要提供商品資訊、數量調整與結帳流程，同時讓營運者能在後台追蹤訂單與庫存。"
+        ],
+        "features": [],
+        "steps": [],
+        "scope": false
+      },
+      {
+        "heading": "把需求拆成具體功能",
+        "label": "02 / SOLUTION",
+        "paragraphs": [],
+        "features": [
+          {
+            "title": "商品詳情",
+            "body": "逐件閱讀用途、規格與保養內容，再加入購物車。"
+          },
+          {
+            "title": "購物流程",
+            "body": "搜尋、分類、排序、購物車增減與結帳資料填寫。"
+          },
+          {
+            "title": "營運連動",
+            "body": "建立訂單後可到 FORMA 查看，並同步此裝置庫存。"
+          }
+        ],
+        "steps": [],
+        "scope": false
+      },
+      {
+        "heading": "你可以這樣操作",
+        "label": "03 / WALKTHROUGH",
+        "paragraphs": [],
+        "features": [],
+        "steps": [
+          "查看商品詳情與分類",
+          "加入商品並調整數量",
+          "填寫結帳資料建立本機訂單",
+          "前往後台查看訂單與庫存"
+        ],
+        "scope": false
+      },
+      {
+        "heading": "畫面與互動的考量",
+        "label": "04 / DESIGN",
+        "paragraphs": ["以圖片為商品入口，購物車使用對話框集中處理，讓返回商品列表更直接。"],
+        "features": [],
+        "steps": [],
+        "scope": false
+      },
+      {
+        "heading": "目前實作範圍",
+        "label": "05 / SCOPE",
+        "paragraphs": [
+          "不收款或寄送商品；訂單僅保留於此裝置，不具正式電商的金流、物流與會員功能。"
+        ],
+        "features": [],
+        "steps": [],
+        "scope": true
+      }
+    ]
+  },
+  {
+    "slug": "freebet",
+    "title": "Freebet 競賽預測平台",
+    "lead": "Flutter 專案經驗，轉成可以操作的產品流程。",
+    "eyebrow": "CASE 08 / 行動產品・競賽流程",
+    "meta": ["背景 / 實際開發經驗", "成品 / 自主重建的網頁作品", "角色 / 流程規劃・畫面與互動實作"],
+    "image": null,
+    "sections": [
+      {
+        "heading": "從實際經驗出發",
+        "label": "01 / EXPERIENCE",
+        "paragraphs": [
+          "我在 Freebet 的開發經驗包含 Flutter Web／Android／iOS、Riverpod 狀態管理、go_router 路由，以及競賽詳情、參與、結果確認與不同狀態的介面。這份作品保留這些產品情境，用網頁方式重新製作，方便客戶直接體驗。"
+        ],
+        "features": [],
+        "steps": [],
+        "scope": false
+      },
+      {
+        "heading": "這份作品能操作什麼？",
+        "label": "02 / IMPLEMENTATION",
+        "paragraphs": [],
+        "features": [
+          {
+            "title": "探索與建立",
+            "body": "搜尋、類別與狀態篩選，並建立包含兩方與截止時間的競賽。"
+          },
+          {
+            "title": "參與與限制",
+            "body": "限制重複參與、建立者參與、截止後參與與點數不足；每次參與都更新本機資料。"
+          },
+          {
+            "title": "狀態與確認",
+            "body": "呈現 ongoing、awaiting、pending、disputed、ended 五種狀態，依狀態顯示對應操作。"
+          }
+        ],
+        "steps": [],
+        "scope": false
+      },
+      {
+        "heading": "依照這條路線體驗",
+        "label": "03 / TRY IT",
+        "paragraphs": [],
+        "features": [],
+        "steps": [
+          "在探索頁開啟籃球競賽，選邊投入 50 體驗點數。",
+          "返回我的競賽，查看你的參與與點數變化。",
+          "開啟「遊戲友誼賽」，確認結果或提出爭議。",
+          "建立一場競賽，結束參與並提出結果，觀察狀態切換。"
+        ],
+        "scope": false
+      },
+      {
+        "heading": "把產品狀態轉成畫面規則",
+        "label": "04 / DECISIONS",
+        "paragraphs": [
+          "建立者管理與參與者操作分開：建立者可以關閉參與、提出結果；參與者可以選邊、確認結果或提出爭議。倒數顯示確認期限，但本作不把倒數結束直接當成結算成功。"
+        ],
+        "features": [],
+        "steps": [],
+        "scope": false
+      },
+      {
+        "heading": "經驗背景與本作技術",
+        "label": "05 / TECHNOLOGY",
+        "paragraphs": [
+          "實際經驗背景：Flutter、Riverpod、go_router、競賽狀態、詳情卡片與結果確認。此作品實作：React 元件、功能型 Hooks 與純函式狀態模型，本機儲存保留資料。沒有使用原專案程式碼，也不是 Flutter 發布版本。"
+        ],
+        "features": [],
+        "steps": [],
+        "scope": false
+      },
+      {
+        "heading": "實作範圍",
+        "label": "06 / SCOPE",
+        "paragraphs": [
+          "本作提供網頁操作與狀態規則，未實作 JWT 登入、Secure Storage、真實 Server API、多人確認同步、點數派發或金流。樣本競賽與參與者都是自主設定。"
+        ],
+        "features": [],
+        "steps": [],
+        "scope": true
+      }
+    ]
+  },
+  {
+    "slug": "gameflow",
+    "title": "GAMEFLOW 遊戲事件控制台",
+    "lead": "讓遊戲流程、事件與 HUD 在同一個畫面說話。",
+    "eyebrow": "CASE 09 / 遊戲開發・流程整合",
+    "meta": ["背景 / 實際開發經驗", "成品 / 自主重建的網頁作品", "角色 / 流程規劃・畫面與互動實作"],
+    "image": null,
+    "sections": [
+      {
+        "heading": "從實際經驗出發",
+        "label": "01 / EXPERIENCE",
+        "paragraphs": [
+          "我的遊戲開發經驗包含 Egret／Cocos Creator，以及新專案中的 GameFlow、MockSocket、BattleEventBus、AUTO、HitClaim、扣費派彩與 ServerBridge 整合。這份作品挑出能公開說明的通用情境，自主重建一個本機事件控制台。"
+        ],
+        "features": [],
+        "steps": [],
+        "scope": false
+      },
+      {
+        "heading": "這份作品能操作什麼？",
+        "label": "02 / IMPLEMENTATION",
+        "paragraphs": [],
+        "features": [
+          {
+            "title": "大廳與房間",
+            "body": "選房、進入戰鬥、返回大廳；流程狀態決定可使用的控制。"
+          },
+          {
+            "title": "HUD 與 AUTO",
+            "body": "發射扣點、命中加點與計數立即更新，AUTO 固定間隔操作，離房或離線停止。"
+          },
+          {
+            "title": "事件與去重",
+            "body": "每次操作記錄事件；重送同一筆命中編號，只記錄忽略事件，不重複增加點數。"
+          }
+        ],
+        "steps": [],
+        "scope": false
+      },
+      {
+        "heading": "依照這條路線體驗",
+        "label": "03 / TRY IT",
+        "paragraphs": [],
+        "features": [],
+        "steps": [
+          "從近岸或深藍海域進入房間。",
+          "點選場景中的目標，或用選單選擇目標，再發射。",
+          "查看事件紀錄中的扣點與命中事件，重送上一筆命中驗證去重。",
+          "開啟 AUTO，接著中斷連線，確認自動操作停止。",
+          "恢復連線後繼續操作，或返回大廳結束本次場次。"
+        ],
+        "scope": false
+      },
+      {
+        "heading": "把整合問題做成可以驗證的行為",
+        "label": "04 / DECISIONS",
+        "paragraphs": [
+          "畫面更新由狀態推動，事件層集中處理進房、離房、發射、命中與連線切換。UI 不直接修改餘額；所有點數變化透過事件規則處理，避免分散在不同按鈕裡。"
+        ],
+        "features": [],
+        "steps": [],
+        "scope": false
+      },
+      {
+        "heading": "經驗背景與本作技術",
+        "label": "05 / TECHNOLOGY",
+        "paragraphs": [
+          "實際經驗背景：Cocos／Egret、遊戲流程協調、事件整合與 HUD 協作。此作品實作：React、Canvas 2D、獨立事件狀態模型與本機事件紀錄。不是原遊戲程式、素材或伺服器介面的公開版本。"
+        ],
+        "features": [],
+        "steps": [],
+        "scope": false
+      },
+      {
+        "heading": "實作範圍",
+        "label": "06 / SCOPE",
+        "paragraphs": [
+          "房間、目標、點數與回應規則皆為自主設定。沒有真實 Socket、ServerBridge、多玩家座標或權威伺服器；命中為固定的本機流程，沒有真實金錢或隨機勝負。"
+        ],
+        "features": [],
+        "steps": [],
+        "scope": true
+      }
+    ]
+  }
+]
