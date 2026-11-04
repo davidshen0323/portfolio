@@ -131,7 +131,7 @@
   },
   {
     "slug": "dashboard",
-    "title": "FORMA 營運管理工作台",
+    "title": "營運管家 營運管理工作台",
     "lead": "讓訂單、預約與庫存成為可追蹤的工作流程。",
     "eyebrow": "CASE 03 / 營運介面",
     "meta": ["類型 / 營運介面", "角色 / 頁面規劃・視覺編排・互動實作", "性質 / 自主作品"],
@@ -153,8 +153,8 @@
         "paragraphs": [],
         "features": [
           {
-            "title": "跨頁資料",
-            "body": "AXIS 下單後，同裝置後台可讀取訂單與扣除後的庫存。"
+            "title": "獨立資料流程",
+            "body": "在營運管家建立訂單後，同一專案的訂單管理、庫存與報表會同步更新；各獨立網站分別保留自己的資料。"
           },
           {
             "title": "營運報表",
@@ -178,7 +178,7 @@
         "paragraphs": [],
         "features": [],
         "steps": [
-          "先到 AXIS 建立一筆訂單",
+          "在營運管家建立一筆訂單",
           "在訂單管理更新狀態",
           "查看報表並匯出資料",
           "建立客服紀錄並追蹤進度"
@@ -201,7 +201,9 @@
         "steps": [],
         "scope": true
       }
-    ]
+    ],
+    "href": "https://forma-operations.dav0323.chatgpt.site",
+    "repository": "https://github.com/davidshen0323/operation-manager"
   },
   {
     "slug": "api",
@@ -337,7 +339,7 @@
   },
   {
     "slug": "dealer",
-    "title": "ATELIER SELECT 外匯車",
+    "title": "好車選品 外匯車",
     "lead": "從找車、比較到整理詢問需求，串成一段完整旅程。",
     "eyebrow": "CASE 06 / 汽車買賣",
     "meta": ["類型 / 汽車買賣", "角色 / 頁面規劃・視覺編排・互動實作", "性質 / 自主作品"],
@@ -405,11 +407,13 @@
         "steps": [],
         "scope": true
       }
-    ]
+    ],
+    "href": "https://atelier-select-motors.dav0323.chatgpt.site",
+    "repository": "https://github.com/davidshen0323/goodcar-motors"
   },
   {
     "slug": "shop",
-    "title": "AXIS 汽車生活選物",
+    "title": "車旅好物 汽車生活選物",
     "lead": "把商品探索、購物車與訂單管理接在一起。",
     "eyebrow": "CASE 07 / 電子商務",
     "meta": ["類型 / 電子商務", "角色 / 頁面規劃・視覺編排・互動實作", "性質 / 自主作品"],
@@ -454,7 +458,7 @@
         "steps": [
           "加入商品，讓商品小計達 NT$ 1,000。",
           "到結帳切換配送城市，觀察行政區重設。",
-          "套用 AXIS10、勾選加價購，核對折扣、運費與訂單總額。",
+          "套用 SAVE10、勾選加價購，核對折扣、運費與訂單總額。",
           "建立本機訂單後，到後台查看商品與金額。",
           "到後台開啟訂單詳情，核對配送與費用，再將待處理改為處理中、已完成，查看狀態紀錄。"
         ],
@@ -478,7 +482,9 @@
         "steps": [],
         "scope": true
       }
-    ]
+    ],
+    "href": "https://axis-objects.dav0323.chatgpt.site",
+    "repository": "https://github.com/davidshen0323/drive-essentials"
   },
   {
     "slug": "contests",
@@ -729,8 +735,8 @@
   },
   {
     "slug": "business",
-    "href": "dashboard.html#contracts",
-    "title": "FORMA 商務營運模組",
+    "href": "https://forma-operations.dav0323.chatgpt.site/#contracts",
+    "title": "營運管家 商務營運模組",
     "lead": "讓審核與入庫，有可驗證的條件和可追蹤的結果。",
     "eyebrow": "CASE 11 / 商務流程與資料驗證",
     "meta": [
@@ -804,6 +810,7 @@
         "steps": [],
         "scope": true
       }
-    ]
+    ],
+    "repository": "https://github.com/davidshen0323/operation-manager"
   }
 ]

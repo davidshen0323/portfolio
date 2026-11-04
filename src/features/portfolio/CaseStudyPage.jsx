@@ -35,6 +35,16 @@ export default function CaseStudyPage({ slug }) {
           <AppLink className="pill" href={projectHref}>
             {t('開啟作品 ↗')}
           </AppLink>
+          {item.repository && (
+            <a
+              className="pill case-source-link"
+              href={item.repository}
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub ↗
+            </a>
+          )}
         </section>
         <div className="case-meta">
           {item.meta.map((text) => (

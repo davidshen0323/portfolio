@@ -40,12 +40,12 @@ const projects = [
   {
     number: '11',
     tag: '商務流程與資料驗證',
-    art: 'FORMA',
+    art: '營運管家',
     subtitle: 'CONTRACTS / RECEIVING',
     flow: 'REVIEW → RECEIVE → TRACK',
     title: '商務營運模組',
     text: '合約數量、期間與費用審核；紙箱與周轉箱驗收、良品入庫及操作紀錄，與商品庫存連動。',
-    href: 'dashboard.html#contracts',
+    href: 'https://forma-operations.dav0323.chatgpt.site/#contracts',
     slug: 'business',
     theme: 'business',
   },
@@ -72,15 +72,24 @@ export default function ExperienceWork() {
               {project.number} / {t(project.tag)}
             </span>
             <div className={`experience-art ${project.theme}-art`}>
-              <strong>{project.art}</strong>
+              <strong>{t(project.art)}</strong>
               <span>{project.subtitle}</span>
               <small>{project.flow}</small>
             </div>
             <h3>{t(project.title)}</h3>
             <p>{t(project.text)}</p>
-            <div className="experience-links">
+            <div className="experience-links" style={{ flexWrap: 'wrap' }}>
               <AppLink href={project.href}>{t('開啟作品 ↗')}</AppLink>
               <AppLink href={`case-${project.slug}.html`}>{t('經驗與實作解析 ↗')}</AppLink>
+              {project.slug === 'business' && (
+                <a
+                  href="https://github.com/davidshen0323/operation-manager"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  GitHub ↗
+                </a>
+              )}
             </div>
           </article>
         ))}

@@ -806,3 +806,16 @@ button:focus-visible {
     font-size: 9px;
   }
 }
+
+.work-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 24px;
+  align-items: center;
+}
+.work-actions a {
+  text-underline-offset: 5px;
+}
+.case-source-link {
+  margin-inline-start: 12px;
+}

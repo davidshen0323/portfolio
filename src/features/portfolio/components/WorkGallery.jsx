@@ -42,16 +42,28 @@ export default function WorkGallery() {
           <span>{'COFFEE & SPACE'}</span>
         </div>
       </AppLink>
-      <AppLink className="work-card dash-card" href="dashboard.html">
+      <article className="work-card dash-card">
         <div>
           <span className="tag">{t('03 / 互動介面')}</span>
           <h2>
-            {t('預約管理')}
+            {t('營運管家')}
             <br />
-            {t('工作台')}
+            {t('商務管理')}
           </h2>
-          <p>{t('搜尋、篩選、狀態更新與數據摘要')}</p>
-          <span className="view-link">{t('查看作品 ↗')}</span>
+          <p>{t('訂單、合約、入庫與庫存管理')}</p>
+          <div className="work-actions">
+            <AppLink className="view-link" href="https://forma-operations.dav0323.chatgpt.site">
+              {t('開啟網站 ↗')}
+            </AppLink>
+            <a
+              className="view-link"
+              href="https://github.com/davidshen0323/operation-manager"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub ↗
+            </a>
+          </div>
         </div>
         <div className="dash-preview">
           <div className="mini-top"></div>
@@ -70,7 +82,7 @@ export default function WorkGallery() {
           <div className="mini-line"></div>
           <div className="mini-line short"></div>
         </div>
-      </AppLink>
+      </article>
       <AppLink className="work-card api-card" href="api.html">
         <div>
           <span className="tag">{t('04 / API 串接')}</span>
@@ -109,36 +121,63 @@ export default function WorkGallery() {
           <small>{'RESPONSIVE / CASE STUDY'}</small>
         </div>
       </AppLink>
-      <AppLink className="work-card dealer-card" href="dealer.html">
+      <article className="work-card dealer-card">
         <div>
           <span className="tag">{t('06 / 汽車銷售')}</span>
           <h2>
-            {'ATELIER'}
+            {t('好車選品')}
             <br />
             {t('外匯車選購')}
           </h2>
           <p>{t('車源篩選、車輛詳情與詢問流程')}</p>
-          <span className="view-link">{t('開啟網站 ↗')}</span>
+          <div className="work-actions">
+            <AppLink
+              className="view-link"
+              href="https://atelier-select-motors.dav0323.chatgpt.site"
+            >
+              {t('開啟網站 ↗')}
+            </AppLink>
+            <a
+              className="view-link"
+              href="https://github.com/davidshen0323/goodcar-motors"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub ↗
+            </a>
+          </div>
         </div>
         <div className="dealer-preview">
           <span>{'CURATED IMPORTED CARS'}</span>
         </div>
-      </AppLink>
-      <AppLink className="work-card shop-card" href="shop.html">
+      </article>
+      <article className="work-card shop-card">
         <div>
           <span className="tag">{t('07 / 電子商務')}</span>
           <h2>
-            {'AXIS'}
+            {t('車旅好物')}
             <br />
             {t('選物商店')}
           </h2>
           <p>{t('商品搜尋、購物車與結帳流程')}</p>
-          <span className="view-link">{t('開始選購 ↗')}</span>
+          <div className="work-actions">
+            <AppLink className="view-link" href="https://axis-objects.dav0323.chatgpt.site">
+              {t('開啟網站 ↗')}
+            </AppLink>
+            <a
+              className="view-link"
+              href="https://github.com/davidshen0323/drive-essentials"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub ↗
+            </a>
+          </div>
         </div>
         <div className="shop-preview">
           <span>{'OBJECTS FOR THE DRIVE'}</span>
         </div>
-      </AppLink>
+      </article>
     </section>
   );
 }
