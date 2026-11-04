@@ -1346,5 +1346,19 @@
   "訂單、合約、入庫與庫存管理": "Orders, contracts, receiving and inventory",
   "獨立資料流程": "Independent Data Flow",
   "在營運管家建立訂單後，同一專案的訂單管理、庫存與報表會同步更新；各獨立網站分別保留自己的資料。": "Create an order in Operations Manager to update its order management, inventory and reports. Each standalone website keeps its own data.",
-  "在營運管家建立一筆訂單": "Create an order in Operations Manager"
+  "在營運管家建立一筆訂單": "Create an order in Operations Manager",
+  "01 / 互動介面": "01 / INTERACTIVE UI",
+  "02 / 汽車銷售": "02 / AUTO SALES",
+  "03 / 電子商務": "03 / E-COMMERCE",
+  "04 / 品牌網站": "04 / BRAND WEBSITE",
+  "05 / 品牌網站": "05 / BRAND WEBSITE",
+  "06 / API 串接": "06 / API INTEGRATION",
+  "07 / Bug 修復": "07 / BUG FIX",
+  "CASE 01 / 營運介面": "CASE 01 / OPERATIONS UI",
+  "CASE 02 / 汽車買賣": "CASE 02 / AUTO SALES",
+  "CASE 03 / 電子商務": "CASE 03 / E-COMMERCE",
+  "CASE 04 / 品牌網站": "CASE 04 / BRAND WEBSITE",
+  "CASE 05 / 品牌網站": "CASE 05 / BRAND WEBSITE",
+  "CASE 06 / API 串接": "CASE 06 / API INTEGRATION",
+  "CASE 07 / 介面修復": "CASE 07 / UI REPAIR"
 }

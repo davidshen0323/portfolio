@@ -1,140 +1,14 @@
 [
   {
-    "slug": "auto",
-    "title": "FORM 汽車美容",
-    "lead": "讓訪客快速理解服務差異，找到適合的保養方案。",
-    "eyebrow": "CASE 01 / 品牌網站",
-    "meta": ["類型 / 品牌網站", "角色 / 頁面規劃・視覺編排・互動實作", "性質 / 自主作品"],
-    "image": "auto-hero.png",
-    "sections": [
-      {
-        "heading": "需求情境",
-        "label": "01 / CONTEXT",
-        "paragraphs": [
-          "汽車美容店需要把服務、方案與預約入口整理在同一條閱讀路線，避免訪客只看到漂亮照片，卻不知道下一步。"
-        ],
-        "features": [],
-        "steps": [],
-        "scope": false
-      },
-      {
-        "heading": "把需求拆成具體功能",
-        "label": "02 / SOLUTION",
-        "paragraphs": [],
-        "features": [
-          {
-            "title": "服務分層",
-            "body": "由日常清潔到完整整理，依使用需求安排方案。"
-          },
-          {
-            "title": "預約引導",
-            "body": "把詢問入口放在方案閱讀後，縮短尋找聯絡方式的路徑。"
-          },
-          {
-            "title": "行動閱讀",
-            "body": "以單欄排列服務與價格，讓手機使用者能逐項比較。"
-          }
-        ],
-        "steps": [],
-        "scope": false
-      },
-      {
-        "heading": "你可以這樣操作",
-        "label": "03 / WALKTHROUGH",
-        "paragraphs": [],
-        "features": [],
-        "steps": ["查看首頁的服務定位", "比較方案與保養項目", "使用頁面的預約引導"],
-        "scope": false
-      },
-      {
-        "heading": "畫面與互動的考量",
-        "label": "04 / DESIGN",
-        "paragraphs": ["深色車體影像搭配留白，先建立品牌語氣，再用短段落解釋服務。"],
-        "features": [],
-        "steps": [],
-        "scope": false
-      },
-      {
-        "heading": "目前實作範圍",
-        "label": "05 / SCOPE",
-        "paragraphs": ["品牌、服務文案與視覺編排屬自主創作；尚未串接真實預約或付款。"],
-        "features": [],
-        "steps": [],
-        "scope": true
-      }
-    ]
-  },
-  {
-    "slug": "cafe",
-    "title": "日常留白 咖啡工作室",
-    "lead": "把品牌氛圍轉成能閱讀、能找到資訊的網站。",
-    "eyebrow": "CASE 02 / 品牌網站",
-    "meta": ["類型 / 品牌網站", "角色 / 頁面規劃・視覺編排・互動實作", "性質 / 自主作品"],
-    "image": "cafe-hero.png",
-    "sections": [
-      {
-        "heading": "需求情境",
-        "label": "01 / CONTEXT",
-        "paragraphs": [
-          "咖啡店的網站需要同時回答品牌特色、提供什麼，以及如何到訪；資訊必須清楚，又不破壞安靜的品牌感。"
-        ],
-        "features": [],
-        "steps": [],
-        "scope": false
-      },
-      {
-        "heading": "把需求拆成具體功能",
-        "label": "02 / SOLUTION",
-        "paragraphs": [],
-        "features": [
-          {
-            "title": "品牌故事",
-            "body": "以空間與日常節奏建立閱讀起點。"
-          },
-          {
-            "title": "產品編排",
-            "body": "讓飲品與品牌文字有各自的閱讀層級。"
-          },
-          {
-            "title": "到訪資訊",
-            "body": "集中營業與到訪內容，減少來回尋找。"
-          }
-        ],
-        "steps": [],
-        "scope": false
-      },
-      {
-        "heading": "你可以這樣操作",
-        "label": "03 / WALKTHROUGH",
-        "paragraphs": [],
-        "features": [],
-        "steps": ["閱讀品牌故事", "瀏覽飲品與空間內容", "找到到訪資訊"],
-        "scope": false
-      },
-      {
-        "heading": "畫面與互動的考量",
-        "label": "04 / DESIGN",
-        "paragraphs": ["暖色背景、植物綠與中文大字建立視覺辨識，手機版保留清楚的段落間距。"],
-        "features": [],
-        "steps": [],
-        "scope": false
-      },
-      {
-        "heading": "目前實作範圍",
-        "label": "05 / SCOPE",
-        "paragraphs": ["品牌為自主設定；頁面資訊不是實際營業店家的公告。"],
-        "features": [],
-        "steps": [],
-        "scope": true
-      }
-    ]
-  },
-  {
     "slug": "dashboard",
     "title": "營運管家 營運管理工作台",
     "lead": "讓訂單、預約與庫存成為可追蹤的工作流程。",
-    "eyebrow": "CASE 03 / 營運介面",
-    "meta": ["類型 / 營運介面", "角色 / 頁面規劃・視覺編排・互動實作", "性質 / 自主作品"],
+    "eyebrow": "CASE 01 / 營運介面",
+    "meta": [
+      "類型 / 營運介面",
+      "角色 / 頁面規劃・視覺編排・互動實作",
+      "性質 / 自主作品"
+    ],
     "image": null,
     "sections": [
       {
@@ -188,7 +62,9 @@
       {
         "heading": "畫面與互動的考量",
         "label": "04 / DESIGN",
-        "paragraphs": ["以任務優先的總覽帶出各管理頁；表格保留欄位完整性，窄螢幕使用橫向捲動。"],
+        "paragraphs": [
+          "以任務優先的總覽帶出各管理頁；表格保留欄位完整性，窄螢幕使用橫向捲動。"
+        ],
         "features": [],
         "steps": [],
         "scope": false
@@ -196,7 +72,9 @@
       {
         "heading": "目前實作範圍",
         "label": "05 / SCOPE",
-        "paragraphs": ["資料僅儲存在目前瀏覽器，沒有伺服器、帳號權限或多人同步。"],
+        "paragraphs": [
+          "資料僅儲存在目前瀏覽器，沒有伺服器、帳號權限或多人同步。"
+        ],
         "features": [],
         "steps": [],
         "scope": true
@@ -206,143 +84,15 @@
     "repository": "https://github.com/davidshen0323/operation-manager"
   },
   {
-    "slug": "api",
-    "title": "FIELDNOTE 地震資料",
-    "lead": "把公開資料變成可以查詢與閱讀的介面。",
-    "eyebrow": "CASE 04 / API 串接",
-    "meta": ["類型 / API 串接", "角色 / 頁面規劃・視覺編排・互動實作", "性質 / 自主作品"],
-    "image": null,
-    "sections": [
-      {
-        "heading": "需求情境",
-        "label": "01 / CONTEXT",
-        "paragraphs": [
-          "原始資料含有時間、座標、規模等欄位；查詢介面需要整理條件，並讓使用者理解載入、無結果與失敗狀態。"
-        ],
-        "features": [],
-        "steps": [],
-        "scope": false
-      },
-      {
-        "heading": "把需求拆成具體功能",
-        "label": "02 / SOLUTION",
-        "paragraphs": [],
-        "features": [
-          {
-            "title": "查詢條件",
-            "body": "依時間區間與最低規模發送公開資料查詢。"
-          },
-          {
-            "title": "狀態處理",
-            "body": "提供載入提示、空結果與失敗重試。"
-          },
-          {
-            "title": "結果閱讀",
-            "body": "呈現時間、地點與規模，並分頁整理查詢結果。"
-          }
-        ],
-        "steps": [],
-        "scope": false
-      },
-      {
-        "heading": "你可以這樣操作",
-        "label": "03 / WALKTHROUGH",
-        "paragraphs": [],
-        "features": [],
-        "steps": ["選擇時間範圍與規模", "發送查詢並觀察狀態", "閱讀結果、切換頁數"],
-        "scope": false
-      },
-      {
-        "heading": "畫面與互動的考量",
-        "label": "04 / DESIGN",
-        "paragraphs": ["優先顯示最常閱讀的地點與規模，將查詢條件集中於結果上方。"],
-        "features": [],
-        "steps": [],
-        "scope": false
-      },
-      {
-        "heading": "目前實作範圍",
-        "label": "05 / SCOPE",
-        "paragraphs": [
-          "依賴 USGS 公開 API 的連線與資料狀態；目前執行環境尚未驗證成功回應，不作為災害警報工具。"
-        ],
-        "features": [],
-        "steps": [],
-        "scope": true
-      }
-    ]
-  },
-  {
-    "slug": "fix",
-    "title": "手機版跑版修復",
-    "lead": "讓問題、原因與修復效果可以直接比較。",
-    "eyebrow": "CASE 05 / 介面修復",
-    "meta": ["類型 / 介面修復", "角色 / 頁面規劃・視覺編排・互動實作", "性質 / 自主作品"],
-    "image": null,
-    "sections": [
-      {
-        "heading": "需求情境",
-        "label": "01 / CONTEXT",
-        "paragraphs": [
-          "固定寬度的內容容易在手機版超出畫面；修復案例應具體指出溢出來源，而不是只放一張完工截圖。"
-        ],
-        "features": [],
-        "steps": [],
-        "scope": false
-      },
-      {
-        "heading": "把需求拆成具體功能",
-        "label": "02 / SOLUTION",
-        "paragraphs": [],
-        "features": [
-          {
-            "title": "前後切換",
-            "body": "保留固定寬度版本與響應式版本，直接比較。"
-          },
-          {
-            "title": "寬度調整",
-            "body": "透過滑桿改變容器寬度，觀察斷點行為。"
-          },
-          {
-            "title": "尺寸量測",
-            "body": "使用 scrollWidth 與 clientWidth 顯示溢出數值。"
-          }
-        ],
-        "steps": [],
-        "scope": false
-      },
-      {
-        "heading": "你可以這樣操作",
-        "label": "03 / WALKTHROUGH",
-        "paragraphs": [],
-        "features": [],
-        "steps": ["縮小測試容器寬度", "切換修復前與修復後", "比較水平溢出值"],
-        "scope": false
-      },
-      {
-        "heading": "畫面與互動的考量",
-        "label": "04 / DESIGN",
-        "paragraphs": ["保留相同內容，讓差異集中在寬度與排版行為，方便理解修復原因。"],
-        "features": [],
-        "steps": [],
-        "scope": false
-      },
-      {
-        "heading": "目前實作範圍",
-        "label": "05 / SCOPE",
-        "paragraphs": ["這是自主建立的問題案例，並非已交付的客戶維修紀錄。"],
-        "features": [],
-        "steps": [],
-        "scope": true
-      }
-    ]
-  },
-  {
     "slug": "dealer",
     "title": "好車選品 外匯車",
     "lead": "從找車、比較到整理詢問需求，串成一段完整旅程。",
-    "eyebrow": "CASE 06 / 汽車買賣",
-    "meta": ["類型 / 汽車買賣", "角色 / 頁面規劃・視覺編排・互動實作", "性質 / 自主作品"],
+    "eyebrow": "CASE 02 / 汽車買賣",
+    "meta": [
+      "類型 / 汽車買賣",
+      "角色 / 頁面規劃・視覺編排・互動實作",
+      "性質 / 自主作品"
+    ],
     "image": "dealer-hero.png",
     "sections": [
       {
@@ -392,7 +142,9 @@
       {
         "heading": "畫面與互動的考量",
         "label": "04 / DESIGN",
-        "paragraphs": ["降低規格閱讀負擔，先顯示價格、年份、里程，再讓有興趣的訪客開啟詳情。"],
+        "paragraphs": [
+          "降低規格閱讀負擔，先顯示價格、年份、里程，再讓有興趣的訪客開啟詳情。"
+        ],
         "features": [],
         "steps": [],
         "scope": false
@@ -415,8 +167,12 @@
     "slug": "shop",
     "title": "車旅好物 汽車生活選物",
     "lead": "把商品探索、購物車與訂單管理接在一起。",
-    "eyebrow": "CASE 07 / 電子商務",
-    "meta": ["類型 / 電子商務", "角色 / 頁面規劃・視覺編排・互動實作", "性質 / 自主作品"],
+    "eyebrow": "CASE 03 / 電子商務",
+    "meta": [
+      "類型 / 電子商務",
+      "角色 / 頁面規劃・視覺編排・互動實作",
+      "性質 / 自主作品"
+    ],
     "image": "products.png",
     "sections": [
       {
@@ -467,7 +223,9 @@
       {
         "heading": "畫面與互動的考量",
         "label": "04 / DESIGN",
-        "paragraphs": ["以圖片為商品入口，購物車使用對話框集中處理，讓返回商品列表更直接。"],
+        "paragraphs": [
+          "以圖片為商品入口，購物車使用對話框集中處理，讓返回商品列表更直接。"
+        ],
         "features": [],
         "steps": [],
         "scope": false
@@ -487,11 +245,323 @@
     "repository": "https://github.com/davidshen0323/drive-essentials"
   },
   {
+    "slug": "auto",
+    "title": "FORM 汽車美容",
+    "lead": "讓訪客快速理解服務差異，找到適合的保養方案。",
+    "eyebrow": "CASE 04 / 品牌網站",
+    "meta": [
+      "類型 / 品牌網站",
+      "角色 / 頁面規劃・視覺編排・互動實作",
+      "性質 / 自主作品"
+    ],
+    "image": "auto-hero.png",
+    "sections": [
+      {
+        "heading": "需求情境",
+        "label": "01 / CONTEXT",
+        "paragraphs": [
+          "汽車美容店需要把服務、方案與預約入口整理在同一條閱讀路線，避免訪客只看到漂亮照片，卻不知道下一步。"
+        ],
+        "features": [],
+        "steps": [],
+        "scope": false
+      },
+      {
+        "heading": "把需求拆成具體功能",
+        "label": "02 / SOLUTION",
+        "paragraphs": [],
+        "features": [
+          {
+            "title": "服務分層",
+            "body": "由日常清潔到完整整理，依使用需求安排方案。"
+          },
+          {
+            "title": "預約引導",
+            "body": "把詢問入口放在方案閱讀後，縮短尋找聯絡方式的路徑。"
+          },
+          {
+            "title": "行動閱讀",
+            "body": "以單欄排列服務與價格，讓手機使用者能逐項比較。"
+          }
+        ],
+        "steps": [],
+        "scope": false
+      },
+      {
+        "heading": "你可以這樣操作",
+        "label": "03 / WALKTHROUGH",
+        "paragraphs": [],
+        "features": [],
+        "steps": [
+          "查看首頁的服務定位",
+          "比較方案與保養項目",
+          "使用頁面的預約引導"
+        ],
+        "scope": false
+      },
+      {
+        "heading": "畫面與互動的考量",
+        "label": "04 / DESIGN",
+        "paragraphs": [
+          "深色車體影像搭配留白，先建立品牌語氣，再用短段落解釋服務。"
+        ],
+        "features": [],
+        "steps": [],
+        "scope": false
+      },
+      {
+        "heading": "目前實作範圍",
+        "label": "05 / SCOPE",
+        "paragraphs": [
+          "品牌、服務文案與視覺編排屬自主創作；尚未串接真實預約或付款。"
+        ],
+        "features": [],
+        "steps": [],
+        "scope": true
+      }
+    ]
+  },
+  {
+    "slug": "cafe",
+    "title": "日常留白 咖啡工作室",
+    "lead": "把品牌氛圍轉成能閱讀、能找到資訊的網站。",
+    "eyebrow": "CASE 05 / 品牌網站",
+    "meta": [
+      "類型 / 品牌網站",
+      "角色 / 頁面規劃・視覺編排・互動實作",
+      "性質 / 自主作品"
+    ],
+    "image": "cafe-hero.png",
+    "sections": [
+      {
+        "heading": "需求情境",
+        "label": "01 / CONTEXT",
+        "paragraphs": [
+          "咖啡店的網站需要同時回答品牌特色、提供什麼，以及如何到訪；資訊必須清楚，又不破壞安靜的品牌感。"
+        ],
+        "features": [],
+        "steps": [],
+        "scope": false
+      },
+      {
+        "heading": "把需求拆成具體功能",
+        "label": "02 / SOLUTION",
+        "paragraphs": [],
+        "features": [
+          {
+            "title": "品牌故事",
+            "body": "以空間與日常節奏建立閱讀起點。"
+          },
+          {
+            "title": "產品編排",
+            "body": "讓飲品與品牌文字有各自的閱讀層級。"
+          },
+          {
+            "title": "到訪資訊",
+            "body": "集中營業與到訪內容，減少來回尋找。"
+          }
+        ],
+        "steps": [],
+        "scope": false
+      },
+      {
+        "heading": "你可以這樣操作",
+        "label": "03 / WALKTHROUGH",
+        "paragraphs": [],
+        "features": [],
+        "steps": [
+          "閱讀品牌故事",
+          "瀏覽飲品與空間內容",
+          "找到到訪資訊"
+        ],
+        "scope": false
+      },
+      {
+        "heading": "畫面與互動的考量",
+        "label": "04 / DESIGN",
+        "paragraphs": [
+          "暖色背景、植物綠與中文大字建立視覺辨識，手機版保留清楚的段落間距。"
+        ],
+        "features": [],
+        "steps": [],
+        "scope": false
+      },
+      {
+        "heading": "目前實作範圍",
+        "label": "05 / SCOPE",
+        "paragraphs": [
+          "品牌為自主設定；頁面資訊不是實際營業店家的公告。"
+        ],
+        "features": [],
+        "steps": [],
+        "scope": true
+      }
+    ]
+  },
+  {
+    "slug": "api",
+    "title": "FIELDNOTE 地震資料",
+    "lead": "把公開資料變成可以查詢與閱讀的介面。",
+    "eyebrow": "CASE 06 / API 串接",
+    "meta": [
+      "類型 / API 串接",
+      "角色 / 頁面規劃・視覺編排・互動實作",
+      "性質 / 自主作品"
+    ],
+    "image": null,
+    "sections": [
+      {
+        "heading": "需求情境",
+        "label": "01 / CONTEXT",
+        "paragraphs": [
+          "原始資料含有時間、座標、規模等欄位；查詢介面需要整理條件，並讓使用者理解載入、無結果與失敗狀態。"
+        ],
+        "features": [],
+        "steps": [],
+        "scope": false
+      },
+      {
+        "heading": "把需求拆成具體功能",
+        "label": "02 / SOLUTION",
+        "paragraphs": [],
+        "features": [
+          {
+            "title": "查詢條件",
+            "body": "依時間區間與最低規模發送公開資料查詢。"
+          },
+          {
+            "title": "狀態處理",
+            "body": "提供載入提示、空結果與失敗重試。"
+          },
+          {
+            "title": "結果閱讀",
+            "body": "呈現時間、地點與規模，並分頁整理查詢結果。"
+          }
+        ],
+        "steps": [],
+        "scope": false
+      },
+      {
+        "heading": "你可以這樣操作",
+        "label": "03 / WALKTHROUGH",
+        "paragraphs": [],
+        "features": [],
+        "steps": [
+          "選擇時間範圍與規模",
+          "發送查詢並觀察狀態",
+          "閱讀結果、切換頁數"
+        ],
+        "scope": false
+      },
+      {
+        "heading": "畫面與互動的考量",
+        "label": "04 / DESIGN",
+        "paragraphs": [
+          "優先顯示最常閱讀的地點與規模，將查詢條件集中於結果上方。"
+        ],
+        "features": [],
+        "steps": [],
+        "scope": false
+      },
+      {
+        "heading": "目前實作範圍",
+        "label": "05 / SCOPE",
+        "paragraphs": [
+          "依賴 USGS 公開 API 的連線與資料狀態；目前執行環境尚未驗證成功回應，不作為災害警報工具。"
+        ],
+        "features": [],
+        "steps": [],
+        "scope": true
+      }
+    ]
+  },
+  {
+    "slug": "fix",
+    "title": "手機版跑版修復",
+    "lead": "讓問題、原因與修復效果可以直接比較。",
+    "eyebrow": "CASE 07 / 介面修復",
+    "meta": [
+      "類型 / 介面修復",
+      "角色 / 頁面規劃・視覺編排・互動實作",
+      "性質 / 自主作品"
+    ],
+    "image": null,
+    "sections": [
+      {
+        "heading": "需求情境",
+        "label": "01 / CONTEXT",
+        "paragraphs": [
+          "固定寬度的內容容易在手機版超出畫面；修復案例應具體指出溢出來源，而不是只放一張完工截圖。"
+        ],
+        "features": [],
+        "steps": [],
+        "scope": false
+      },
+      {
+        "heading": "把需求拆成具體功能",
+        "label": "02 / SOLUTION",
+        "paragraphs": [],
+        "features": [
+          {
+            "title": "前後切換",
+            "body": "保留固定寬度版本與響應式版本，直接比較。"
+          },
+          {
+            "title": "寬度調整",
+            "body": "透過滑桿改變容器寬度，觀察斷點行為。"
+          },
+          {
+            "title": "尺寸量測",
+            "body": "使用 scrollWidth 與 clientWidth 顯示溢出數值。"
+          }
+        ],
+        "steps": [],
+        "scope": false
+      },
+      {
+        "heading": "你可以這樣操作",
+        "label": "03 / WALKTHROUGH",
+        "paragraphs": [],
+        "features": [],
+        "steps": [
+          "縮小測試容器寬度",
+          "切換修復前與修復後",
+          "比較水平溢出值"
+        ],
+        "scope": false
+      },
+      {
+        "heading": "畫面與互動的考量",
+        "label": "04 / DESIGN",
+        "paragraphs": [
+          "保留相同內容，讓差異集中在寬度與排版行為，方便理解修復原因。"
+        ],
+        "features": [],
+        "steps": [],
+        "scope": false
+      },
+      {
+        "heading": "目前實作範圍",
+        "label": "05 / SCOPE",
+        "paragraphs": [
+          "這是自主建立的問題案例，並非已交付的客戶維修紀錄。"
+        ],
+        "features": [],
+        "steps": [],
+        "scope": true
+      }
+    ]
+  },
+  {
     "slug": "contests",
     "title": "競賽預測平台",
     "lead": "Flutter 專案經驗，轉成可以操作的產品流程。",
     "eyebrow": "CASE 08 / 行動產品・競賽流程",
-    "meta": ["背景 / 實際開發經驗", "成品 / 自主重建的網頁作品", "角色 / 流程規劃・畫面與互動實作"],
+    "meta": [
+      "背景 / 實際開發經驗",
+      "成品 / 自主重建的網頁作品",
+      "角色 / 流程規劃・畫面與互動實作"
+    ],
     "image": null,
     "sections": [
       {
@@ -575,7 +645,11 @@
     "title": "GAMEFLOW 遊戲事件控制台",
     "lead": "讓遊戲流程、事件與 HUD 在同一個畫面說話。",
     "eyebrow": "CASE 09 / 遊戲開發・流程整合",
-    "meta": ["背景 / 實際開發經驗", "成品 / 自主重建的網頁作品", "角色 / 流程規劃・畫面與互動實作"],
+    "meta": [
+      "背景 / 實際開發經驗",
+      "成品 / 自主重建的網頁作品",
+      "角色 / 流程規劃・畫面與互動實作"
+    ],
     "image": null,
     "sections": [
       {

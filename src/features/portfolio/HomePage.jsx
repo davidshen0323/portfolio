@@ -27,8 +27,8 @@ export default function HomePage() {
       <main>
         <HomeHero />
         <CareerSection />
-        <ExperienceWork />
         <WorkGallery />
+        <ExperienceWork />
         <CaseStudyIndex />
         <ServicesSection />
         <WorkflowSection />

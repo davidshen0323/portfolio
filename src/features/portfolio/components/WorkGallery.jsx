@@ -9,42 +9,9 @@ export default function WorkGallery() {
         <span>{t('作品選集')}</span>
         <span>{'WEB / INTERFACE'}</span>
       </div>
-      <AppLink className="work-card car-card" href="auto.html">
-        <div>
-          <span className="tag">{t('01 / 品牌網站')}</span>
-          <h2>
-            {'FORM'}
-            <br />
-            {t('汽車美容')}
-          </h2>
-          <p>{t('服務介紹、方案比較與預約引導')}</p>
-          <span className="view-link">{t('開啟網站 ↗')}</span>
-        </div>
-        <div className="abstract-car">
-          <span>{'FORM / AUTO CARE'}</span>
-        </div>
-      </AppLink>
-      <AppLink className="work-card cafe-card" href="cafe.html">
-        <div>
-          <span className="tag">{t('02 / 品牌網站')}</span>
-          <h2>
-            {t('日常留白')}
-            <br />
-            {t('咖啡工作室')}
-          </h2>
-          <p>{t('品牌故事、產品呈現與營業資訊')}</p>
-          <span className="view-link">{t('開啟網站 ↗')}</span>
-        </div>
-        <div className="cafe-mark">
-          {t('日常')}
-          <br />
-          {t('留白')}
-          <span>{'COFFEE & SPACE'}</span>
-        </div>
-      </AppLink>
       <article className="work-card dash-card">
         <div>
-          <span className="tag">{t('03 / 互動介面')}</span>
+          <span className="tag">{t('01 / 互動介面')}</span>
           <h2>
             {t('營運管家')}
             <br />
@@ -83,47 +50,9 @@ export default function WorkGallery() {
           <div className="mini-line short"></div>
         </div>
       </article>
-      <AppLink className="work-card api-card" href="api.html">
-        <div>
-          <span className="tag">{t('04 / API 串接')}</span>
-          <h2>
-            {'FIELDNOTE'}
-            <br />
-            {t('地震資料')}
-          </h2>
-          <p>{t('即時查詢、條件篩選與錯誤處理')}</p>
-          <span className="view-link">{t('實際查詢 ↗')}</span>
-        </div>
-        <div className="api-preview">
-          <div className="api-orbit">
-            <strong>{'3.8'}</strong>
-          </div>
-          <span>{'USGS / LIVE DATA'}</span>
-        </div>
-      </AppLink>
-      <AppLink className="work-card fix-card" href="fix.html">
-        <div>
-          <span className="tag">{t('05 / Bug 修復')}</span>
-          <h2>
-            {t('手機版')}
-            <br />
-            {t('跑版修復')}
-          </h2>
-          <p>{t('切換修復前後，觀察實測溢出值')}</p>
-          <span className="view-link">{t('查看案例 ↗')}</span>
-        </div>
-        <div className="fix-preview">
-          <div>
-            <span>{'BEFORE'}</span>
-            <b>{'→'}</b>
-            <span>{'AFTER'}</span>
-          </div>
-          <small>{'RESPONSIVE / CASE STUDY'}</small>
-        </div>
-      </AppLink>
       <article className="work-card dealer-card">
         <div>
-          <span className="tag">{t('06 / 汽車銷售')}</span>
+          <span className="tag">{t('02 / 汽車銷售')}</span>
           <h2>
             {t('好車選品')}
             <br />
@@ -153,7 +82,7 @@ export default function WorkGallery() {
       </article>
       <article className="work-card shop-card">
         <div>
-          <span className="tag">{t('07 / 電子商務')}</span>
+          <span className="tag">{t('03 / 電子商務')}</span>
           <h2>
             {t('車旅好物')}
             <br />
@@ -178,6 +107,77 @@ export default function WorkGallery() {
           <span>{'OBJECTS FOR THE DRIVE'}</span>
         </div>
       </article>
+      <AppLink className="work-card car-card" href="auto.html">
+        <div>
+          <span className="tag">{t('04 / 品牌網站')}</span>
+          <h2>
+            {'FORM'}
+            <br />
+            {t('汽車美容')}
+          </h2>
+          <p>{t('服務介紹、方案比較與預約引導')}</p>
+          <span className="view-link">{t('開啟網站 ↗')}</span>
+        </div>
+        <div className="abstract-car">
+          <span>{'FORM / AUTO CARE'}</span>
+        </div>
+      </AppLink>
+      <AppLink className="work-card cafe-card" href="cafe.html">
+        <div>
+          <span className="tag">{t('05 / 品牌網站')}</span>
+          <h2>
+            {t('日常留白')}
+            <br />
+            {t('咖啡工作室')}
+          </h2>
+          <p>{t('品牌故事、產品呈現與營業資訊')}</p>
+          <span className="view-link">{t('開啟網站 ↗')}</span>
+        </div>
+        <div className="cafe-mark">
+          {t('日常')}
+          <br />
+          {t('留白')}
+          <span>{'COFFEE & SPACE'}</span>
+        </div>
+      </AppLink>
+      <AppLink className="work-card api-card" href="api.html">
+        <div>
+          <span className="tag">{t('06 / API 串接')}</span>
+          <h2>
+            {'FIELDNOTE'}
+            <br />
+            {t('地震資料')}
+          </h2>
+          <p>{t('即時查詢、條件篩選與錯誤處理')}</p>
+          <span className="view-link">{t('實際查詢 ↗')}</span>
+        </div>
+        <div className="api-preview">
+          <div className="api-orbit">
+            <strong>{'3.8'}</strong>
+          </div>
+          <span>{'USGS / LIVE DATA'}</span>
+        </div>
+      </AppLink>
+      <AppLink className="work-card fix-card" href="fix.html">
+        <div>
+          <span className="tag">{t('07 / Bug 修復')}</span>
+          <h2>
+            {t('手機版')}
+            <br />
+            {t('跑版修復')}
+          </h2>
+          <p>{t('切換修復前後，觀察實測溢出值')}</p>
+          <span className="view-link">{t('查看案例 ↗')}</span>
+        </div>
+        <div className="fix-preview">
+          <div>
+            <span>{'BEFORE'}</span>
+            <b>{'→'}</b>
+            <span>{'AFTER'}</span>
+          </div>
+          <small>{'RESPONSIVE / CASE STUDY'}</small>
+        </div>
+      </AppLink>
     </section>
   );
 }
